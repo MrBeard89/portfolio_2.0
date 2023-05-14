@@ -1,0 +1,6 @@
+@forward '../../sass/templates';
+@use '../../sass/variables' as v;
+
+.about-wrapper {
+  margin-top: v.$first-top-gap;
+}
