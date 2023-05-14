@@ -8,6 +8,20 @@ import { IoMdArrowDropleft, IoMdArrowDropright } from 'react-icons/io'
 
 export const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
+
+  //Automatic hide when scrolling down
+
+  var prevScrollpos = window.pageYOffset
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset
+    if (prevScrollpos > currentScrollPos) {
+      document.querySelector('.navbar-wrapper').style.top = '0'
+    } else {
+      document.querySelector('.navbar-wrapper').style.top = '-70px'
+    }
+    prevScrollpos = currentScrollPos
+  }
+
   return (
     <div className='navbar-wrapper '>
       <div className='navbar-container'>
