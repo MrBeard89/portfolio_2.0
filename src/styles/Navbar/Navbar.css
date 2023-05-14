@@ -1,1 +1,138 @@
-/*# sourceMappingURL=Navbar.css.map */
+.navbar-wrapper {
+  font-family: "Kanit", sans-serif;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  transition: top 0.3s;
+  margin-bottom: 8rem;
+}
+.navbar-wrapper .navbar-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  width: 100vw;
+  background-color: #fc4445;
+}
+.navbar-wrapper .navbar-container .logo-container {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+.navbar-wrapper .navbar-container .logo-container .logo {
+  width: 35px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.navbar-wrapper .navbar-container .logo-container .logo:is(:hover, :focus-visible) {
+  opacity: 1;
+}
+.navbar-wrapper .navbar-container .navlinks-container {
+  display: none;
+}
+.navbar-wrapper .navbar-container .navlinks-container .decor-arrow {
+  display: none;
+}
+.navbar-wrapper .navbar-container .hamburger {
+  z-index: 3;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  font-size: 24px;
+  color: #000000;
+}
+.navbar-wrapper .navbar-container .hamburger:is(:hover, :focus-visible) {
+  cursor: pointer;
+  animation: menuShake 0.4s infinite;
+}
+.navbar-wrapper .navbar-container .close {
+  z-index: 3;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  font-size: 24px;
+  color: #cafafe;
+}
+.navbar-wrapper .navbar-container .close:is(:hover, :focus-visible) {
+  cursor: pointer;
+}
+
+.navbar-mobile {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 8rem;
+  animation: mobilemenu 1s;
+}
+.navbar-mobile .navlinks {
+  display: flex;
+  flex-direction: column;
+  position: inherit;
+  top: 0;
+  width: 100%;
+  background-color: #fc4445;
+  background-image: url("../../assets/images/cropped-triangles.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  opacity: 0.8;
+  padding-top: 5rem;
+}
+.navbar-mobile .navlinks .navlink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 5rem;
+  color: #55bcc9;
+}
+.navbar-mobile .navlinks .navlink:is(:hover, :focus-visible) {
+  background-color: #fc4445;
+  color: #cafafe;
+}
+.navbar-mobile .navlinks a {
+  text-decoration: none;
+  color: #cafafe;
+}
+.navbar-mobile .decor-arrow {
+  z-index: -1;
+  position: absolute;
+  left: -125px;
+  bottom: 40vh;
+  font-size: 200px;
+  color: #fc4445;
+  opacity: 0.8;
+}
+
+@keyframes mobilemenu {
+  from {
+    transform: translateX(130px);
+    transition: 0.5s ease-in;
+  }
+  to {
+    transform: translateX(0px);
+    transition: 0.5s ease-in;
+  }
+}
+@keyframes menuShake {
+  0% {
+    transform: rotate(0deg);
+    transition: 0.2s ease-in;
+  }
+  20% {
+    transform: rotate(15deg);
+    transition: 0.2s ease-in;
+  }
+  50% {
+    transform: rotate(-15deg);
+    transition: 0.2s ease-in;
+  }
+  100% {
+    transform: rotate(0);
+    transition: 0.2s ease-in;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

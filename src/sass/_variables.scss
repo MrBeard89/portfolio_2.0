@@ -43,12 +43,12 @@ $fs-h3: 22px;
 
 ///////////////////* Colors *///////////////////
 
-$color-white: #dbdbdb;
-$color-black: #0b0c10;
-$color-blue-dark: #1f2833;
-$color-blue-grayish: #c5c6c7;
-$color-soft-cyan: #66fcf1;
-$color-dark-cyan: #45a29e;
+$color-white-cyan: #cafafe;
+$color-black: #000000;
+$color-red: #fc4445;
+$color-bright-cyan: #3feee6;
+$color-moderate-cyan: #55bcc9;
+$color-soft-blue: #97caef;
 
 ///////////////////* Breakpoints *///////////////////
 
@@ -58,3 +58,15 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
+
+///////////////////* Variables *///////////////////
+
+$component-gap: 5rem;
+$navbar-bottom: 8rem;
+
+$mobile-s-width: 300px;
+$mobile-m-width: 556px;
+$tablet-width: 748px;
+$desktop-m-width: 972px;
+$desktop-l-width: 1180px;
+$desktop-xl-width: 1380px;

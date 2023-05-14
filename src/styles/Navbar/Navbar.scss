@@ -1,0 +1,167 @@
+@forward '../../sass/templates';
+@use '../../sass/variables' as v;
+
+.navbar-wrapper {
+  font-family: v.$font-family-kanit;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  transition: top 0.3s;
+  margin-bottom: v.$navbar-bottom;
+
+  .navbar-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100vw;
+    background-color: v.$color-red;
+
+    .logo-container {
+      position: absolute;
+      top: 12px;
+      left: 20px;
+
+      .logo {
+        width: 35px;
+        border-radius: 50%;
+        opacity: 0.5;
+
+        &:is(:hover, :focus-visible) {
+          opacity: 1;
+        }
+      }
+    }
+
+    //Desktop menu
+
+    .navlinks-container {
+      display: none;
+
+      .decor-arrow {
+        display: none;
+      }
+    }
+
+    //Mobile menu icons
+
+    .hamburger {
+      z-index: 3;
+      position: absolute;
+      right: 20px;
+      top: 18px;
+      font-size: v.$fs-xl;
+      color: v.$color-black;
+
+      &:is(:hover, :focus-visible) {
+        cursor: pointer;
+        animation: menuShake 0.4s infinite;
+      }
+    }
+
+    .close {
+      z-index: 3;
+      position: absolute;
+      right: 20px;
+      top: 18px;
+      font-size: v.$fs-xl;
+      color: v.$color-white-cyan;
+
+      &:is(:hover, :focus-visible) {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//Mobile Menu
+
+.navbar-mobile {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 8rem;
+  animation: mobilemenu 1s;
+
+  .navlinks {
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    top: 0;
+    width: 100%;
+    background-color: v.$color-red;
+    background-image: url('../../assets/images/cropped-triangles.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    opacity: 0.8;
+    padding-top: 5rem;
+
+    .navlink {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      text-transform: uppercase;
+      font-weight: v.$comfortaa-weight-700;
+      height: 5rem;
+      color: v.$color-moderate-cyan;
+
+      &:is(:hover, :focus-visible) {
+        background-color: v.$color-red;
+        color: v.$color-white-cyan;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: v.$color-white-cyan;
+    }
+  }
+
+  .decor-arrow {
+    z-index: -1;
+    position: absolute;
+    left: -125px;
+    bottom: calc(80vh / 2);
+    font-size: 200px;
+    color: v.$color-red;
+    opacity: 0.8;
+  }
+}
+
+//keyframes
+@keyframes mobilemenu {
+  from {
+    transform: translateX(130px);
+    transition: 0.5s ease-in;
+  }
+  to {
+    transform: translateX(0px);
+    transition: 0.5s ease-in;
+  }
+}
+
+@keyframes menuShake {
+  0% {
+    transform: rotate(0deg);
+    transition: 0.2s ease-in;
+  }
+  20% {
+    transform: rotate(15deg);
+    transition: 0.2s ease-in;
+  }
+  50% {
+    transform: rotate(-15deg);
+    transition: 0.2s ease-in;
+  }
+  100% {
+    transform: rotate(0);
+    transition: 0.2s ease-in;
+  }
+}
+//Media Queries
+@media only screen and (max-width: 320px) {
+}
