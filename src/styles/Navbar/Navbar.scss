@@ -15,9 +15,10 @@
     justify-content: space-between;
     height: 4rem;
     width: 100vw;
-    background-color: v.$color-red;
+    background-color: v.$color-white-cyan;
 
     .logo-container {
+      display: flex;
       position: absolute;
       top: 12px;
       left: 20px;
@@ -29,6 +30,29 @@
 
         &:is(:hover, :focus-visible) {
           opacity: 1;
+          border: 1px solid v.$color-moderate-cyan;
+        }
+      }
+
+      .logo-name {
+        font-size: v.$fs-m;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: v.$color-black;
+        opacity: 0.5;
+        padding-top: 5px;
+        padding-left: 15px;
+
+        &:is(:hover, :focus-visible) {
+          opacity: 1;
+          color: v.$color-red;
+        }
+      }
+
+      .logo {
+        &:is(:hover, :focus-visible) + .logo-name {
+          opacity: 1;
+          color: v.$color-red;
         }
       }
     }
@@ -65,7 +89,7 @@
       right: 20px;
       top: 18px;
       font-size: v.$fs-xl;
-      color: v.$color-white-cyan;
+      color: v.$color-moderate-cyan;
 
       &:is(:hover, :focus-visible) {
         cursor: pointer;
@@ -80,52 +104,69 @@
   z-index: 2;
   position: relative;
   display: flex;
-  height: 100vh;
-  width: 8rem;
+  height: fit-content;
+  width: 100%;
   animation: mobilemenu 1s;
 
   .navlinks {
+    z-index: inherit;
     display: flex;
     flex-direction: column;
     position: inherit;
-    top: 0;
+    top: 64px;
     width: 100%;
-    background-color: v.$color-red;
-    // background-image: url('../../assets/images/cropped-triangles.jpg');
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-blend-mode: darken;
-    //opacity: 0.8;
-    padding-top: 5rem;
-
-    .navlink {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      list-style: none;
-      text-transform: uppercase;
-      font-weight: v.$comfortaa-weight-700;
-      height: 5rem;
-      color: v.$color-moderate-cyan;
-
-      &:is(:hover, :focus-visible) {
-        background-color: v.$color-black;
-        color: v.$color-white-cyan;
-      }
-    }
+    background-color: v.$color-white-cyan;
 
     a {
+      position: relative;
       text-decoration: none;
       color: v.$color-white-cyan;
+
+      .navlink {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: v.$comfortaa-weight-700;
+        height: 4rem;
+        color: v.$color-moderate-cyan;
+        padding-right: 1.5rem;
+        border-top: 1px solid #c0c0c073;
+
+        &:is(:hover, :focus-visible) {
+          background-color: v.$color-red;
+          color: v.$color-white-cyan;
+
+          .hover-arrow {
+            opacity: 1;
+          }
+
+          h3 {
+            transform: translateX(-15px);
+            transition: 0.15s ease-in;
+            text-shadow: 8px 5px v.$color-black;
+          }
+        }
+
+        .hover-arrow {
+          opacity: 0;
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+          color: v.$color-white-cyan;
+          font-size: v.$fs-xl;
+        }
+      }
     }
   }
 
   .decor-arrow {
     z-index: -1;
     position: absolute;
-    left: -125px;
-    bottom: calc(80vh / 2);
-    font-size: 200px;
+    left: -85px;
+    bottom: 35px;
+    font-size: 140px;
     color: v.$color-red;
   }
 }
@@ -133,7 +174,7 @@
 //keyframes
 @keyframes mobilemenu {
   from {
-    transform: translateX(130px);
+    transform: translateX(450px);
     transition: 0.5s ease-in;
   }
   to {

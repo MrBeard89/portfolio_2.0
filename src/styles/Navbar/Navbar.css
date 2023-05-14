@@ -12,9 +12,10 @@
   justify-content: space-between;
   height: 4rem;
   width: 100vw;
-  background-color: #fc4445;
+  background-color: #ffffff;
 }
 .navbar-wrapper .navbar-container .logo-container {
+  display: flex;
   position: absolute;
   top: 12px;
   left: 20px;
@@ -26,6 +27,24 @@
 }
 .navbar-wrapper .navbar-container .logo-container .logo:is(:hover, :focus-visible) {
   opacity: 1;
+  border: 1px solid #55bcc9;
+}
+.navbar-wrapper .navbar-container .logo-container .logo-name {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.5;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar-container .logo-container .logo-name:is(:hover, :focus-visible) {
+  opacity: 1;
+  color: #fc4445;
+}
+.navbar-wrapper .navbar-container .logo-container .logo:is(:hover, :focus-visible) + .logo-name {
+  opacity: 1;
+  color: #fc4445;
 }
 .navbar-wrapper .navbar-container .navlinks-container {
   display: none;
@@ -51,7 +70,7 @@
   right: 20px;
   top: 18px;
   font-size: 24px;
-  color: #cafafe;
+  color: #55bcc9;
 }
 .navbar-wrapper .navbar-container .close:is(:hover, :focus-visible) {
   cursor: pointer;
@@ -61,49 +80,68 @@
   z-index: 2;
   position: relative;
   display: flex;
-  height: 100vh;
-  width: 8rem;
+  height: fit-content;
+  width: 100%;
   animation: mobilemenu 1s;
 }
 .navbar-mobile .navlinks {
+  z-index: inherit;
   display: flex;
   flex-direction: column;
   position: inherit;
-  top: 0;
+  top: 64px;
   width: 100%;
-  background-color: #fc4445;
-  padding-top: 5rem;
+  background-color: #ffffff;
 }
-.navbar-mobile .navlinks .navlink {
+.navbar-mobile .navlinks a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbar-mobile .navlinks a .navlink {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   list-style: none;
   text-transform: uppercase;
   font-weight: 700;
-  height: 5rem;
+  height: 4rem;
   color: #55bcc9;
+  padding-right: 1.5rem;
+  border-top: 1px solid rgba(192, 192, 192, 0.4509803922);
 }
-.navbar-mobile .navlinks .navlink:is(:hover, :focus-visible) {
-  background-color: #000000;
-  color: #cafafe;
+.navbar-mobile .navlinks a .navlink:is(:hover, :focus-visible) {
+  background-color: #fc4445;
+  color: #ffffff;
 }
-.navbar-mobile .navlinks a {
-  text-decoration: none;
-  color: #cafafe;
+.navbar-mobile .navlinks a .navlink:is(:hover, :focus-visible) .hover-arrow {
+  opacity: 1;
+}
+.navbar-mobile .navlinks a .navlink:is(:hover, :focus-visible) h3 {
+  transform: translateX(-15px);
+  transition: 0.15s ease-in;
+  text-shadow: 8px 5px #000000;
+}
+.navbar-mobile .navlinks a .navlink .hover-arrow {
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  color: #ffffff;
+  font-size: 24px;
 }
 .navbar-mobile .decor-arrow {
   z-index: -1;
   position: absolute;
-  left: -125px;
-  bottom: 40vh;
-  font-size: 200px;
+  left: -85px;
+  bottom: 35px;
+  font-size: 140px;
   color: #fc4445;
 }
 
 @keyframes mobilemenu {
   from {
-    transform: translateX(130px);
+    transform: translateX(450px);
     transition: 0.5s ease-in;
   }
   to {

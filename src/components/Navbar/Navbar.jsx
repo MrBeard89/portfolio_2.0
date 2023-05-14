@@ -25,11 +25,12 @@ export const Navbar = () => {
   return (
     <div className='navbar-wrapper '>
       <div className='navbar-container'>
-        <div className='logo-container'>
-          <HashLink smooth to='/'>
+        <HashLink smooth to='/'>
+          <div className='logo-container'>
             <img className='logo' src={Logo} alt='website logo' />
-          </HashLink>
-        </div>
+            <h1 className='logo-name'>Norbert Kovacs</h1>
+          </div>
+        </HashLink>
 
         <span className='mobile-icon-container' onClick={() => setNavbarOpen((prev) => !prev)}>
           {navbarOpen ? (
@@ -44,19 +45,48 @@ export const Navbar = () => {
 
           <ul className='navlinks' onClick={() => setNavbarOpen(false)}>
             <HashLink smooth to='/'>
-              <li className='navlink'>About</li>
+              <span className='link-container'>
+                <li className='navlink'>
+                  <h3>About</h3>
+                  <IoMdArrowDropright className='hover-arrow' />
+                </li>
+              </span>
             </HashLink>
+
             <HashLink smooth to='/'>
-              <li className='navlink'>Skills</li>
+              <span className='link-container'>
+                <li className='navlink'>
+                  <h3>Skills</h3>
+                  <IoMdArrowDropright className='hover-arrow' />
+                </li>
+              </span>
             </HashLink>
+
             <HashLink smooth to='/'>
-              <li className='navlink'>Projects</li>
+              <span className='link-container'>
+                <li className='navlink'>
+                  <h3>Projects</h3>
+                  <IoMdArrowDropright className='hover-arrow' />
+                </li>
+              </span>
             </HashLink>
+
             <HashLink smooth to='/'>
-              <li className='navlink'>Contact</li>
+              <span className='link-container'>
+                <li className='navlink'>
+                  <h3>Contact</h3>
+                  <IoMdArrowDropright className='hover-arrow' />
+                </li>
+              </span>
             </HashLink>
+
             <HashLink smooth to='/'>
-              <li className='navlink'>Hobby</li>
+              <span className='link-container'>
+                <li className='navlink'>
+                  <h3>Hobby</h3>
+                  <IoMdArrowDropright className='hover-arrow' />
+                </li>
+              </span>
             </HashLink>
           </ul>
         </div>
