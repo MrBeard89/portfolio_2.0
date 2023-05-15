@@ -20,7 +20,6 @@ export const Home = () => {
           <button className='hero-btn'>
             <p>Projects</p>
           </button>
-
           <SlArrowDown className='arrow-down' />
         </div>
       </section>

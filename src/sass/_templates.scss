@@ -1,1 +1,46 @@
 @use '../sass/variables' as v;
+
+//Titles style
+%title-style {
+  position: relative;
+  font-family: v.$font-family-kanit;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+
+  &::after {
+    position: absolute;
+    bottom: -15px;
+    right: 65px;
+    content: '';
+    width: 25px;
+    height: 5px;
+    background-color: v.$color-red;
+    border-radius: 5px;
+  }
+}
+
+//Buttons style
+%Btn-style {
+  font-family: v.$font-family-comfortaa;
+  padding: 15px 55px 15px 55px;
+  border: none;
+  border-radius: 5px;
+  color: v.$color-black;
+  background-color: v.$color-red;
+  font-size: v.$fs-xxl;
+  margin-bottom: v.$component-gap;
+
+  &:is(:hover, :focus-visible) {
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: 0.3s ease-in;
+
+    p {
+      color: v.$color-white-cyan;
+      transform: translateX(-8px);
+      transition: 0.3s ease-in;
+      text-shadow: 3px 3px v.$color-black;
+    }
+  }
+}

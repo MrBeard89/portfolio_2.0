@@ -2,5 +2,85 @@
 @use '../../sass/variables' as v;
 
 .about-wrapper {
-  margin-top: v.$first-top-gap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: v.$font-family-comfortaa;
+  width: 100%;
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: v.$mobile-s-width;
+
+    .introduction-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .about-title {
+        @extend %title-style;
+      }
+
+      .about-info {
+        text-align: center;
+        font-size: v.$fs-m;
+        color: v.$color-soft-black;
+        font-weight: v.$comfortaa-weight-500;
+        margin-bottom: 4rem;
+        line-height: 1.6rem;
+      }
+    }
+
+    .about-text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      :nth-child(4) {
+        margin-bottom: 3rem;
+      }
+
+      .about-text-title {
+        font-family: v.$font-family-kanit;
+        font-size: v.$fs-h3;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+      }
+
+      .about-text {
+        text-align: left;
+        font-size: v.$fs-m;
+        color: v.$color-soft-black;
+        font-weight: v.$comfortaa-weight-500;
+        line-height: 1.6rem;
+
+        a {
+          color: v.$color-moderate-cyan;
+          font-weight: 700;
+
+          &:is(:hover, :active) {
+            color: v.$color-red;
+          }
+        }
+
+        .about-highlighted-text {
+          font-family: v.$font-family-kanit;
+          font-weight: v.$kanit-weight-600;
+          font-size: v.$fs-l;
+          color: v.$color-red;
+        }
+      }
+    }
+
+    .btn-container {
+      display: flex;
+      max-width: 100%;
+      align-items: center;
+      .contact-btn {
+        @extend %Btn-style;
+      }
+    }
+  }
 }

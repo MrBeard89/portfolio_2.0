@@ -1,4 +1,5 @@
 @use '../../sass/variables' as v;
+@forward '../../sass/templates';
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 .home-wrapper {
@@ -19,6 +20,7 @@
       url('https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg');
     background-repeat: repeat;
     background-size: cover;
+    margin-bottom: v.$component-gap;
 
     .hero-wrapper {
       display: flex;
@@ -51,6 +53,7 @@
         line-height: 2rem;
         font-size: v.$fs-xl;
         margin-bottom: 4rem;
+        color: v.$color-soft-black;
 
         .dev-highlight {
           font-weight: v.$comfortaa-weight-700;
@@ -63,25 +66,7 @@
       }
 
       .hero-btn {
-        font-family: v.$font-family-comfortaa;
-        padding: 15px 55px 15px 55px;
-        border: none;
-        border-radius: 5px;
-        color: v.$color-black;
-        background-color: v.$color-red;
-        font-size: v.$fs-xxl;
-        margin-bottom: 3rem;
-
-        &:is(:hover, :focus-visible) {
-          cursor: pointer;
-
-          p {
-            color: v.$color-white-cyan;
-            transform: translateX(-8px);
-            transition: 0.1s ease-in;
-            text-shadow: 3px 3px v.$color-black;
-          }
-        }
+        @extend %Btn-style;
       }
 
       .arrow-down {
