@@ -51,6 +51,22 @@ $color-bright-cyan: #3feee6;
 $color-moderate-cyan: #55bcc9;
 $color-soft-blue: #97caef;
 
+// Progress Bar Colors
+
+$red: #eb816e;
+$blue: #1199ff;
+$purple: #9b59b6;
+$orange: #ffa500;
+$green: #27ae60;
+$yellow: #00ff6a;
+$gray: #9c9c9c;
+$white-gray: #d4d4d4;
+
+// Language Skills Colors
+$dark-blue: #000b49;
+$white: #ffd0d0;
+$navy: rgb(0, 0, 165);
+
 ///////////////////* Breakpoints *///////////////////
 
 $breakpoint-s: 320px;
@@ -71,3 +87,7 @@ $tablet-width: 748px;
 $desktop-m-width: 972px;
 $desktop-l-width: 1180px;
 $desktop-xl-width: 1380px;
+
+$li-padding: 5px;
+
+$animation-delay: 0.7s;

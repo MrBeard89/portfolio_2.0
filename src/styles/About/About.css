@@ -4,6 +4,7 @@
   text-transform: uppercase;
   opacity: 0.8;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .about-wrapper .about-container .introduction-container .about-title::after {
   position: absolute;
@@ -25,6 +26,7 @@
   background-color: #fc4445;
   font-size: 28px;
   margin-bottom: 5rem;
+  box-shadow: 0px 15px 35px 3px #55bcc9;
 }
 .about-wrapper .about-container .btn-container .contact-btn:is(:hover, :focus-visible) {
   cursor: pointer;
@@ -38,18 +40,41 @@
   text-shadow: 3px 3px #000000;
 }
 
+.about-wrapper .about-container .about-text-container .about-text {
+  text-align: left;
+  font-size: 16px;
+  color: rgba(24, 24, 24, 0.8);
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+.about-wrapper .about-container .about-text-container .about-text a {
+  color: #55bcc9;
+  font-weight: 700;
+}
+.about-wrapper .about-container .about-text-container .about-text a:is(:hover, :active) {
+  color: #fc4445;
+}
+.about-wrapper .about-container .about-text-container .about-text .highlighted-text {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fc4445;
+}
+
 .about-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Comfortaa", cursive;
   width: 100%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(245, 245, 245, 0.8));
 }
 .about-wrapper .about-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 300px;
+  padding-top: 5rem;
 }
 .about-wrapper .about-container .introduction-container {
   display: flex;
@@ -77,26 +102,6 @@
   font-size: 22px;
   letter-spacing: 2px;
   margin-bottom: 1rem;
-}
-.about-wrapper .about-container .about-text-container .about-text {
-  text-align: left;
-  font-size: 16px;
-  color: rgba(24, 24, 24, 0.8);
-  font-weight: 500;
-  line-height: 1.6rem;
-}
-.about-wrapper .about-container .about-text-container .about-text a {
-  color: #55bcc9;
-  font-weight: 700;
-}
-.about-wrapper .about-container .about-text-container .about-text a:is(:hover, :active) {
-  color: #fc4445;
-}
-.about-wrapper .about-container .about-text-container .about-text .about-highlighted-text {
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  color: #fc4445;
 }
 .about-wrapper .about-container .btn-container {
   display: flex;

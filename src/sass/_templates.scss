@@ -7,6 +7,7 @@
   text-transform: uppercase;
   opacity: 0.8;
   margin-bottom: 2rem;
+  text-align: center;
 
   &::after {
     position: absolute;
@@ -30,6 +31,7 @@
   background-color: v.$color-red;
   font-size: v.$fs-xxl;
   margin-bottom: v.$component-gap;
+  box-shadow: 0px 15px 35px 3px v.$color-moderate-cyan;
 
   &:is(:hover, :focus-visible) {
     cursor: pointer;
@@ -42,5 +44,147 @@
       transition: 0.3s ease-in;
       text-shadow: 3px 3px v.$color-black;
     }
+  }
+}
+
+//Text style
+%Text-style {
+  text-align: left;
+  font-size: v.$fs-m;
+  color: v.$color-soft-black;
+  font-weight: v.$comfortaa-weight-500;
+  line-height: 1.6rem;
+
+  a {
+    color: v.$color-moderate-cyan;
+    font-weight: 700;
+
+    &:is(:hover, :active) {
+      color: v.$color-red;
+    }
+  }
+
+  .highlighted-text {
+    font-family: v.$font-family-kanit;
+    font-weight: v.$kanit-weight-600;
+    font-size: v.$fs-l;
+    color: v.$color-red;
+  }
+}
+
+//Connect divs with animation
+%connect-anim {
+  #progress-html {
+    -webkit-animation-name: progress-html;
+    animation-name: progress-html;
+    -webkit-animation-delay: v.$animation-delay;
+    animation-delay: v.$animation-delay;
+  }
+
+  #progress-css {
+    -webkit-animation-name: progress-css;
+    animation-name: progress-css;
+    -webkit-animation-delay: v.$animation-delay * 2;
+    animation-delay: v.$animation-delay * 2;
+  }
+
+  #progress-javascript {
+    -webkit-animation-name: progress-javascript;
+    animation-name: progress-javascript;
+    -webkit-animation-delay: v.$animation-delay * 3;
+    animation-delay: v.$animation-delay * 3;
+  }
+
+  #progress-react {
+    -webkit-animation-name: progress-react;
+    animation-name: progress-react;
+    -webkit-animation-delay: v.$animation-delay * 4;
+    animation-delay: v.$animation-delay * 4;
+  }
+
+  #progress-git {
+    -webkit-animation-name: progress-git;
+    animation-name: progress-git;
+    -webkit-animation-delay: v.$animation-delay * 5;
+    animation-delay: v.$animation-delay * 5;
+  }
+
+  #progress-responsive {
+    -webkit-animation-name: progress-responsive;
+    animation-name: progress-responsive;
+    -webkit-animation-delay: v.$animation-delay * 6;
+    animation-delay: v.$animation-delay * 6;
+  }
+
+  #progress-node {
+    -webkit-animation-name: progress-node;
+    animation-name: progress-node;
+    -webkit-animation-delay: v.$animation-delay * 7;
+    animation-delay: v.$animation-delay * 7;
+  }
+
+  #progress-sql {
+    -webkit-animation-name: progress-sql;
+    animation-name: progress-sql;
+    -webkit-animation-delay: v.$animation-delay * 8;
+    animation-delay: v.$animation-delay * 8;
+  }
+
+  #progress-writing {
+    -webkit-animation-name: progress-writing;
+    animation-name: progress-writing;
+    -webkit-animation-delay: v.$animation-delay * 9;
+    animation-delay: v.$animation-delay * 9;
+  }
+
+  #progress-understanding {
+    -webkit-animation-name: progress-understanding;
+    animation-name: progress-understanding;
+    -webkit-animation-delay: v.$animation-delay * 9;
+    animation-delay: v.$animation-delay * 9;
+  }
+
+  #progress-speaking {
+    -webkit-animation-name: progress-speaking;
+    animation-name: progress-speaking;
+    -webkit-animation-delay: v.$animation-delay * 9;
+    animation-delay: v.$animation-delay * 9;
+  }
+}
+
+//Colors for progrssbar
+%colors-progressbar {
+  .progressred {
+    background-color: v.$red;
+  }
+  .progressblue {
+    background-color: v.$blue;
+  }
+  .progresspurple {
+    background-color: v.$purple;
+  }
+  .progressorange {
+    background-color: v.$orange;
+  }
+  .progressgreen {
+    background-color: v.$green;
+  }
+  .progressyellow {
+    background-color: v.$yellow;
+  }
+  .progressgray {
+    background-color: v.$gray;
+  }
+  .progresswhitegray {
+    background-color: v.$white-gray;
+  }
+  .progressdarkblue {
+    background-color: v.$dark-blue;
+  }
+  .progresswhite {
+    background-color: v.$white;
+  }
+  .progressnavy {
+    background-color: v.$navy;
   }
 }

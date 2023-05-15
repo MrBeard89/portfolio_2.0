@@ -1,0 +1,381 @@
+@use '../../sass/variables' as v;
+@forward '../../sass/templates';
+
+.skills-wrapper {
+  max-width: 100%;
+  font-family: v.$font-family-comfortaa;
+  margin-bottom: v.$component-gap;
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: v.$mobile-s-width;
+    padding-top: 5rem;
+
+    .skills-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .skills-title {
+        width: 156px;
+        text-align: center;
+        @extend %title-style;
+        margin-bottom: 4rem;
+      }
+
+      .skills-text {
+        @extend %Text-style;
+        margin-bottom: 4rem;
+      }
+    }
+
+    .skills-bar-container {
+      background-color: v.$color-white-cyan;
+      box-shadow: 0px 0px 12px 2px v.$color-moderate-cyan;
+      border-radius: 0.8rem;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      position: relative;
+      max-width: v.$mobile-s-width;
+      list-style: none;
+
+      li {
+        position: relative;
+        width: 100%;
+        padding: v.$li-padding;
+        margin-bottom: 10px;
+
+        .progressbar-title {
+          h3 {
+            display: inline-block;
+            color: v.$color-soft-black;
+          }
+          .percent {
+            position: absolute;
+            right: v.$li-padding;
+          }
+        } // end progressbar-title
+
+        .bar-container {
+          background: #555;
+          position: relative;
+          width: 100%;
+          height: 6px;
+          margin-top: 6px;
+          display: block;
+
+          .progressbar {
+            position: absolute;
+            width: 0%;
+            height: 100%;
+
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+          }
+
+          //Animation Connect to additional divs + delay set
+          @extend %connect-anim;
+
+          //Progress Colors
+          @extend %colors-progressbar;
+        } // end bar-container
+      }
+    }
+
+    //Language Skills Container
+    .lang-skills {
+      .lang-skills-title {
+        padding-left: 5px;
+        margin-top: v.$component-gap;
+        @extend %title-style;
+
+        &::after {
+          right: 135px;
+        }
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+//Keyframes
+
+@-webkit-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-webkit-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-webkit-keyframes progress-react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@-webkit-keyframes progress-git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@-webkit-keyframes progress-responsive {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@-webkit-keyframes progress-node {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-webkit-keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-webkit-keyframes progress-writing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@-webkit-keyframes progress-understanding {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@-webkit-keyframes progress-speaking {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
+@-moz-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-moz-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-moz-keyframes progress-react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@-moz-keyframes progress-git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@-moz-keyframes progress-responsive {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@-moz-keyframes progress-node {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-moz-keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-moz-keyframes progress-writing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@-moz-keyframes progress-understanding {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@-moz-keyframes progress-speaking {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes progress-react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes progress-git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes progress-responsive {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes progress-node {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@keyframes progress-writing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes progress-understanding {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@keyframes progress-speaking {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}

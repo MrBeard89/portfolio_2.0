@@ -1,0 +1,484 @@
+.skills-wrapper .skills-container .skills-text-container .skills-title, .skills-wrapper .skills-container .lang-skills .lang-skills-title {
+  position: relative;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.skills-wrapper .skills-container .skills-text-container .skills-title::after, .skills-wrapper .skills-container .lang-skills .lang-skills-title::after {
+  position: absolute;
+  bottom: -15px;
+  right: 65px;
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: #fc4445;
+  border-radius: 5px;
+}
+
+.skills-wrapper .skills-container .skills-text-container .skills-text {
+  text-align: left;
+  font-size: 16px;
+  color: rgba(24, 24, 24, 0.8);
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+.skills-wrapper .skills-container .skills-text-container .skills-text a {
+  color: #55bcc9;
+  font-weight: 700;
+}
+.skills-wrapper .skills-container .skills-text-container .skills-text a:is(:hover, :active) {
+  color: #fc4445;
+}
+.skills-wrapper .skills-container .skills-text-container .skills-text .highlighted-text {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fc4445;
+}
+
+.skills-wrapper .skills-container .skills-bar-container li .bar-container #progress-html {
+  -webkit-animation-name: progress-html;
+  animation-name: progress-html;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container #progress-css {
+  -webkit-animation-name: progress-css;
+  animation-name: progress-css;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container #progress-javascript {
+  -webkit-animation-name: progress-javascript;
+  animation-name: progress-javascript;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container #progress-react {
+  -webkit-animation-name: progress-react;
+  animation-name: progress-react;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container #progress-git {
+  -webkit-animation-name: progress-git;
+  animation-name: progress-git;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container #progress-responsive {
+  -webkit-animation-name: progress-responsive;
+  animation-name: progress-responsive;
+  -webkit-animation-delay: 4.2s;
+  animation-delay: 4.2s;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container #progress-node {
+  -webkit-animation-name: progress-node;
+  animation-name: progress-node;
+  -webkit-animation-delay: 4.9s;
+  animation-delay: 4.9s;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container #progress-sql {
+  -webkit-animation-name: progress-sql;
+  animation-name: progress-sql;
+  -webkit-animation-delay: 5.6s;
+  animation-delay: 5.6s;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container #progress-writing {
+  -webkit-animation-name: progress-writing;
+  animation-name: progress-writing;
+  -webkit-animation-delay: 6.3s;
+  animation-delay: 6.3s;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container #progress-understanding {
+  -webkit-animation-name: progress-understanding;
+  animation-name: progress-understanding;
+  -webkit-animation-delay: 6.3s;
+  animation-delay: 6.3s;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container #progress-speaking {
+  -webkit-animation-name: progress-speaking;
+  animation-name: progress-speaking;
+  -webkit-animation-delay: 6.3s;
+  animation-delay: 6.3s;
+}
+
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressred {
+  background-color: #eb816e;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressblue {
+  background-color: #1199ff;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progresspurple {
+  background-color: #9b59b6;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressorange {
+  background-color: #ffa500;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressgreen {
+  background-color: #27ae60;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressyellow {
+  background-color: #00ff6a;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressgray {
+  background-color: #9c9c9c;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progresswhitegray {
+  background-color: #d4d4d4;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressdarkblue {
+  background-color: #000b49;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progresswhite {
+  background-color: #ffd0d0;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressnavy {
+  background-color: rgb(0, 0, 165);
+}
+
+.skills-wrapper {
+  max-width: 100%;
+  font-family: "Comfortaa", cursive;
+  margin-bottom: 5rem;
+}
+.skills-wrapper .skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  padding-top: 5rem;
+}
+.skills-wrapper .skills-container .skills-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-wrapper .skills-container .skills-text-container .skills-title {
+  width: 156px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.skills-wrapper .skills-container .skills-text-container .skills-text {
+  margin-bottom: 4rem;
+}
+.skills-wrapper .skills-container .skills-bar-container {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 12px 2px #55bcc9;
+  border-radius: 0.8rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  max-width: 300px;
+  list-style: none;
+}
+.skills-wrapper .skills-container .skills-bar-container li {
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.skills-wrapper .skills-container .skills-bar-container li .progressbar-title h3 {
+  display: inline-block;
+  color: rgba(24, 24, 24, 0.8);
+}
+.skills-wrapper .skills-container .skills-bar-container li .progressbar-title .percent {
+  position: absolute;
+  right: 5px;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container {
+  background: #555;
+  position: relative;
+  width: 100%;
+  height: 6px;
+  margin-top: 6px;
+  display: block;
+}
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.skills-wrapper .skills-container .lang-skills .lang-skills-title {
+  padding-left: 5px;
+  margin-top: 5rem;
+}
+.skills-wrapper .skills-container .lang-skills .lang-skills-title::after {
+  right: 135px;
+}
+.skills-wrapper .skills-container .lang-skills p {
+  margin-bottom: 1rem;
+}
+
+@-webkit-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-webkit-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-webkit-keyframes progress-react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@-webkit-keyframes progress-git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@-webkit-keyframes progress-responsive {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@-webkit-keyframes progress-node {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-webkit-keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-webkit-keyframes progress-writing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@-webkit-keyframes progress-understanding {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@-webkit-keyframes progress-speaking {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@-moz-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-moz-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-moz-keyframes progress-react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@-moz-keyframes progress-git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@-moz-keyframes progress-responsive {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@-moz-keyframes progress-node {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-moz-keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-moz-keyframes progress-writing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@-moz-keyframes progress-understanding {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@-moz-keyframes progress-speaking {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes progress-react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes progress-git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes progress-responsive {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes progress-node {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@keyframes progress-writing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes progress-understanding {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@keyframes progress-speaking {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}/*# sourceMappingURL=Skills.css.map */

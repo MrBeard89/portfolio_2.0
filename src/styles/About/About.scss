@@ -7,12 +7,14 @@
   align-items: center;
   font-family: v.$font-family-comfortaa;
   width: 100%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(245, 245, 245, 0.8));
 
   .about-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: v.$mobile-s-width;
+    padding-top: 5rem;
 
     .introduction-container {
       display: flex;
@@ -50,27 +52,7 @@
       }
 
       .about-text {
-        text-align: left;
-        font-size: v.$fs-m;
-        color: v.$color-soft-black;
-        font-weight: v.$comfortaa-weight-500;
-        line-height: 1.6rem;
-
-        a {
-          color: v.$color-moderate-cyan;
-          font-weight: 700;
-
-          &:is(:hover, :active) {
-            color: v.$color-red;
-          }
-        }
-
-        .about-highlighted-text {
-          font-family: v.$font-family-kanit;
-          font-weight: v.$kanit-weight-600;
-          font-size: v.$fs-l;
-          color: v.$color-red;
-        }
+        @extend %Text-style;
       }
     }
 
