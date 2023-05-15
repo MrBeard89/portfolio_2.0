@@ -27,7 +27,11 @@ export const About = () => {
             I also like sharing content related to the stuff that I have learned over 1 year in
             <span className='highlighted-text'> Web Development</span> at Webler Studios so it can
             help other people of the Dev Community. Feel free to Connect or Follow me on my{' '}
-            <a href={'https://www.linkedin.com/in/norbert-kov%C3%A1cs-6703ba26b/'} target='_blank'>
+            <a
+              href={'https://www.linkedin.com/in/norbert-kov%C3%A1cs-6703ba26b/'}
+              target='_blank'
+              rel='noreferrer'
+            >
               Linkedin
             </a>{' '}
             where I post useful content related to Web Development and Programming
