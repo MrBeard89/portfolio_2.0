@@ -1,7 +1,6 @@
-import { About } from '../components/About/About'
 import '../styles/Home/Home.scss'
-
-import React from 'react'
+import { About } from '../components/About/About'
+import { Skills } from '../components/Skills/Skills'
 
 import { SlArrowDown } from 'react-icons/sl'
 
@@ -25,6 +24,7 @@ export const Home = () => {
       </section>
 
       <About />
+      <Skills />
     </div>
   )
 }
