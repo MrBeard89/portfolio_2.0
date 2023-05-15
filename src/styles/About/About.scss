@@ -58,8 +58,8 @@
 
     .btn-container {
       display: flex;
-      max-width: 100%;
-      align-items: center;
+      width: v.$mobile-s-width;
+      justify-content: center;
 
       .contact-btn {
         @extend %Btn-style;
