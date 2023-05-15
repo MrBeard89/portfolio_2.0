@@ -1,8 +1,111 @@
+@use '../../sass/variables' as v;
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 .home-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: fit-content;
-  width: fit-content;
+  width: 100%;
+  margin-top: v.$first-top-gap;
+
+  .home-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: v.$font-family-comfortaa;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)),
+      url('https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg');
+    background-repeat: repeat;
+    background-size: cover;
+
+    .hero-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      max-width: v.$mobile-s-width;
+
+      .hero-title {
+        font-family: v.$font-family-kanit;
+        font-weight: v.$kanit-weight-700;
+        text-align: left;
+        text-transform: uppercase;
+        margin-top: 3rem;
+        font-size: v.$fs-h1;
+        padding-left: 16px;
+        margin-bottom: 2rem;
+
+        .smaller-text {
+          font-size: v.$fs-h3;
+          opacity: 0.5;
+          min-width: 85px;
+          padding-top: 1rem;
+        }
+      }
+
+      .hero-text {
+        text-align: left;
+        padding-left: 16px;
+        line-height: 2rem;
+        font-size: v.$fs-xl;
+        margin-bottom: 4rem;
+
+        .dev-highlight {
+          font-weight: v.$comfortaa-weight-700;
+          text-shadow: 3px 3px v.$color-moderate-cyan;
+
+          &:is(:hover, :focus-visible) {
+            color: v.$color-red;
+          }
+        }
+      }
+
+      .hero-btn {
+        font-family: v.$font-family-comfortaa;
+        padding: 15px 55px 15px 55px;
+        border: none;
+        border-radius: 5px;
+        color: v.$color-black;
+        background-color: v.$color-red;
+        font-size: v.$fs-xxl;
+        margin-bottom: 3rem;
+
+        &:is(:hover, :focus-visible) {
+          cursor: pointer;
+
+          p {
+            color: v.$color-white-cyan;
+            transform: translateX(-8px);
+            transition: 0.1s ease-in;
+            text-shadow: 3px 3px v.$color-black;
+          }
+        }
+      }
+
+      .arrow-down {
+        font-size: v.$fs-h1;
+        transform: translateY(-15px);
+        transition: 0.3s ease;
+        animation: animate-arrow 1.5s infinite;
+      }
+    }
+  }
+}
+
+//keyframes
+@keyframes animate-arrow {
+  0% {
+    transform: translateY(0px);
+    transition: 0.3s ease;
+  }
+  50% {
+    transform: translateY(25px);
+    transition: 0.3s ease;
+  }
+  100% {
+    transform: translateY(0px);
+    transition: 0.3s ease;
+  }
 }
