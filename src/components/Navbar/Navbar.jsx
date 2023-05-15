@@ -25,7 +25,7 @@ export const Navbar = () => {
   return (
     <div className='navbar-wrapper '>
       <div className='navbar-container'>
-        <HashLink smooth to='/'>
+        <HashLink smooth to='#hero'>
           <div className='logo-container'>
             <img className='logo' src={Logo} alt='website logo' />
             <h1 className='logo-name'>Norbert Kovacs</h1>

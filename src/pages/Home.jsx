@@ -7,7 +7,7 @@ import { SlArrowDown } from 'react-icons/sl'
 export const Home = () => {
   return (
     <div className='home-wrapper'>
-      <section className='home-hero'>
+      <section className='home-hero' id='hero'>
         <div className='hero-wrapper'>
           <h1 className='hero-title'>
             <span className='smaller-text'>Hey, I'm</span> Norbert Kovacs
