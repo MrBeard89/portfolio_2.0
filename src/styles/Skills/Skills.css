@@ -129,14 +129,14 @@
 .skills-wrapper .skills-container .skills-bar-container li .bar-container .progresswhitegray {
   background-color: #d4d4d4;
 }
-.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressdarkblue {
-  background-color: #000b49;
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progresspink {
+  background-color: #dd149a;
 }
 .skills-wrapper .skills-container .skills-bar-container li .bar-container .progresswhite {
-  background-color: #ffd0d0;
+  background-color: #ffeeee;
 }
-.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressnavy {
-  background-color: rgb(0, 0, 165);
+.skills-wrapper .skills-container .skills-bar-container li .bar-container .progressdarkorange {
+  background-color: rgb(241, 111, 24);
 }
 
 .skills-wrapper {

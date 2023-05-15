@@ -110,7 +110,7 @@ export const Skills = () => {
                 <span className='percent' id='writing-pourcent'></span>
               </div>
               <div className='bar-container'>
-                <span className='progressbar progressdarkblue' id='progress-writing'></span>
+                <span className='progressbar progresspink' id='progress-writing'></span>
               </div>
             </li>
 
@@ -130,7 +130,7 @@ export const Skills = () => {
                 <span className='percent' id='speaking-pourcent'></span>
               </div>
               <div className='bar-container'>
-                <span className='progressbar progressnavy' id='progress-speaking'></span>
+                <span className='progressbar progressdarkorange' id='progress-speaking'></span>
               </div>
             </li>
           </ul>
