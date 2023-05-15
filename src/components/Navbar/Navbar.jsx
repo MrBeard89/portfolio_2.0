@@ -44,7 +44,7 @@ export const Navbar = () => {
           <IoMdArrowDropleft className='decor-arrow' />
 
           <ul className='navlinks' onClick={() => setNavbarOpen(false)}>
-            <HashLink smooth to='/'>
+            <HashLink smooth to='#about'>
               <span className='link-container'>
                 <li className='navlink'>
                   <h3>About</h3>
