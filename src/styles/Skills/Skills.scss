@@ -2,7 +2,10 @@
 @forward '../../sass/templates';
 
 .skills-wrapper {
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   font-family: v.$font-family-comfortaa;
   margin-bottom: v.$component-gap;
 
@@ -11,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: v.$mobile-s-width;
+    width: v.$mobile-s-width;
     padding-top: 5rem;
 
     .skills-text-container {

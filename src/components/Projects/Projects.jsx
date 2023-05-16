@@ -31,8 +31,8 @@ export const Projects = () => {
                 </div>
 
                 <div className='btn-container'>
-                  {project.tech.map((tech) => {
-                    return <button>{tech}</button>
+                  {project.tech.map((tech, index) => {
+                    return <button key={index}>{tech}</button>
                   })}
                 </div>
 

@@ -1,1 +1,213 @@
-/*# sourceMappingURL=Contact.css.map */
+.contact-wrapper .contact-container .contact-title {
+  position: relative;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.contact-wrapper .contact-container .contact-title::after {
+  position: absolute;
+  bottom: -15px;
+  right: 65px;
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: #fc4445;
+  border-radius: 5px;
+}
+
+.contact-wrapper .contact-container .contact-form-container .contact-form .btn-submit {
+  font-family: "Comfortaa", cursive;
+  padding: 15px 55px 15px 55px;
+  border: none;
+  border-radius: 12px;
+  color: #000000;
+  background-color: #fc4445;
+  font-size: 28px;
+  margin-bottom: 2rem;
+  box-shadow: 0px 15px 35px 3px #55bcc9;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .btn-submit:is(:hover, :focus-visible) {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: 0.1s ease-in;
+  color: #ffffff;
+  background-color: #fc4445;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: "Comfortaa", cursive;
+  padding-bottom: 5rem;
+  background-image: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url("https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+.contact-wrapper .contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 300px;
+  padding-top: 5rem;
+}
+.contact-wrapper .contact-container .contact-title {
+  width: 156px;
+  text-align: center;
+}
+.contact-wrapper .contact-container .contact-text {
+  text-align: center;
+  width: 280px;
+}
+.contact-wrapper .contact-container .contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 240px;
+  padding: 15px 0px 15px 0px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-label {
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input {
+  font-family: "Comfortaa", cursive;
+  padding: 5px;
+  padding-left: 10px;
+  color: #000000;
+  background-color: #e7e7e7;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  outline: none;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:not(:focus) + span::after {
+  position: absolute;
+  left: 50px;
+  content: "Please write a valid name";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:valid + span::after {
+  position: absolute;
+  left: 50px;
+  content: "Valid name";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:valid {
+  border: 2px solid green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:invalid {
+  border: 2px solid red;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:is(:placeholder-shown) {
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input::placeholder {
+  font-family: "Comfortaa", cursive;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email {
+  font-family: "Comfortaa", cursive;
+  padding: 5px;
+  padding-left: 10px;
+  color: #000000;
+  background-color: #e7e7e7;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  outline: none;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:not(:focus) + span::after {
+  position: absolute;
+  left: 50px;
+  content: "Please write a valid email";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:valid + span::after {
+  position: absolute;
+  left: 50px;
+  content: "Valid email";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:valid {
+  border: 2px solid green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:invalid {
+  border: 2px solid red;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:is(:placeholder-shown) {
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email::placeholder {
+  font-family: "Comfortaa", cursive;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea {
+  position: relative;
+  font-family: "Comfortaa", cursive;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: none;
+  color: #000000;
+  background-color: #e7e7e7;
+  border-radius: 1rem;
+  outline: none;
+  resize: none;
+  border: 2px solid transparent;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:not(:focus) + span::after {
+  position: absolute;
+  left: 50px;
+  content: "Please write a message";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:valid + span::after {
+  position: absolute;
+  left: 50px;
+  content: "Valid message";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:valid {
+  border: 2px solid green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:invalid {
+  border: 2px solid red;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:is(:placeholder-shown) {
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea::placeholder {
+  font-family: "Comfortaa", cursive;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .btn-submit {
+  margin-top: 2rem;
+}/*# sourceMappingURL=Contact.css.map */

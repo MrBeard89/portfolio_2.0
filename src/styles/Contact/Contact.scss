@@ -1,2 +1,219 @@
 @use '../../sass/variables' as v;
 @forward '../../sass/templates';
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: v.$font-family-comfortaa;
+  padding-bottom: v.$component-gap;
+  background-image: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)),
+    url('https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg');
+  background-repeat: repeat;
+  background-size: cover;
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: v.$mobile-s-width;
+    padding-top: 5rem;
+
+    .contact-title {
+      @extend %title-style;
+      width: 156px;
+      text-align: center;
+    }
+
+    .contact-text {
+      text-align: center;
+      width: 280px;
+    }
+
+    .contact-form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 280px;
+      background-color: v.$color-white-cyan;
+      border-radius: 1rem;
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 240px;
+        padding: 15px 0px 15px 0px;
+
+        .contact-form-field {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          .contact-form-label {
+            font-size: v.$fs-m;
+            font-family: v.$font-family-kanit;
+          }
+
+          //Input - Input
+          .contact-form-input {
+            font-family: v.$font-family-comfortaa;
+            padding: 5px;
+            padding-left: 10px;
+            color: v.$color-black;
+            background-color: #e7e7e7;
+            border: 2px solid transparent;
+            border-radius: 1rem;
+            outline: none;
+
+            //Validation
+
+            &:not(:focus) + span::after {
+              position: absolute;
+              left: 50px;
+              content: 'Please write a valid name';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + span::after {
+              position: absolute;
+              left: 50px;
+              content: 'Valid name';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            &:valid {
+              border: 2px solid green;
+              transition: 0.3s ease;
+            }
+
+            &:invalid {
+              border: 2px solid red;
+              transition: 0.3s ease;
+            }
+
+            &:is(:placeholder-shown) {
+              border: 2px solid transparent;
+              transition: 0.3s ease;
+            }
+
+            &::placeholder {
+              font-family: v.$font-family-comfortaa;
+            }
+          }
+
+          //Input - Email
+          .contact-form-email {
+            font-family: v.$font-family-comfortaa;
+            padding: 5px;
+            padding-left: 10px;
+            color: v.$color-black;
+            background-color: #e7e7e7;
+            border: 2px solid transparent;
+            border-radius: 1rem;
+            outline: none;
+
+            //Validation
+
+            &:not(:focus) + span::after {
+              position: absolute;
+              left: 50px;
+              content: 'Please write a valid email';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + span::after {
+              position: absolute;
+              left: 50px;
+              content: 'Valid email';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            &:valid {
+              border: 2px solid green;
+              transition: 0.3s ease;
+            }
+
+            &:invalid {
+              border: 2px solid red;
+              transition: 0.3s ease;
+            }
+
+            &:is(:placeholder-shown) {
+              border: 2px solid transparent;
+              transition: 0.3s ease;
+            }
+
+            &::placeholder {
+              font-family: v.$font-family-comfortaa;
+            }
+          }
+
+          //Input - Textarea
+          .contact-form-textarea {
+            position: relative;
+            font-family: v.$font-family-comfortaa;
+            padding-top: 10px;
+            padding-left: 10px;
+            border: none;
+            color: v.$color-black;
+            background-color: #e7e7e7;
+            border-radius: 1rem;
+            outline: none;
+            resize: none;
+            border: 2px solid transparent;
+
+            //Validation
+
+            &:not(:focus) + span::after {
+              position: absolute;
+              left: 50px;
+              content: 'Please write a message';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + span::after {
+              position: absolute;
+              left: 50px;
+              content: 'Valid message';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            &:valid {
+              border: 2px solid green;
+              transition: 0.3s ease;
+            }
+
+            &:invalid {
+              border: 2px solid red;
+              transition: 0.3s ease;
+            }
+
+            &:is(:placeholder-shown) {
+              border: 2px solid transparent;
+              transition: 0.3s ease;
+            }
+
+            &::placeholder {
+              font-family: v.$font-family-comfortaa;
+            }
+          }
+        }
+
+        .btn-submit {
+          margin-top: 2rem;
+          @extend %contact-btn;
+        }
+      }
+    }
+  }
+}

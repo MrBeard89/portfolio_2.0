@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/About/About.scss'
+import { HashLink } from 'react-router-hash-link'
 
 export const About = () => {
   return (
@@ -44,9 +45,11 @@ export const About = () => {
         </div>
 
         <div className='btn-container'>
-          <button className='contact-btn'>
-            <p>Contact</p>
-          </button>
+          <HashLink smooth to='#contact'>
+            <button className='contact-btn'>
+              <p>Contact</p>
+            </button>
+          </HashLink>
         </div>
       </div>
     </div>

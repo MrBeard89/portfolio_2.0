@@ -71,7 +71,7 @@ export const Navbar = () => {
               </span>
             </HashLink>
 
-            <HashLink smooth to='/'>
+            <HashLink smooth to='#contact'>
               <span className='link-container'>
                 <li className='navlink'>
                   <h3>Contact</h3>

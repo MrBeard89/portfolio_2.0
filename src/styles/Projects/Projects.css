@@ -49,7 +49,10 @@
 }
 
 .projects-wrapper {
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   font-family: "Comfortaa", cursive;
   margin-bottom: 5rem;
 }
@@ -59,7 +62,7 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  max-width: 300px;
+  width: 300px;
   padding-top: 5rem;
 }
 .projects-wrapper .projects-container .projects-title {
