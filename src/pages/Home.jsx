@@ -5,6 +5,8 @@ import { Skills } from '../components/Skills/Skills'
 import { SlArrowDown } from 'react-icons/sl'
 import { Projects } from '../components/Projects/Projects'
 
+import { HashLink } from 'react-router-hash-link'
+
 export const Home = () => {
   return (
     <div className='home-wrapper'>
@@ -17,9 +19,11 @@ export const Home = () => {
             A <span className='dev-highlight'>Frontend Developer</span> building websites and
             applications ,that leads to a good user experience
           </p>
-          <button className='hero-btn'>
-            <p>Projects</p>
-          </button>
+          <HashLink smooth to='#projects'>
+            <button className='hero-btn'>
+              <p>Projects</p>
+            </button>
+          </HashLink>
           <SlArrowDown className='arrow-down' />
         </div>
       </section>

@@ -78,6 +78,10 @@
 .home-wrapper .home-hero .hero-wrapper .hero-text .dev-highlight:is(:hover, :focus-visible) {
   color: #fc4445;
 }
+.home-wrapper .home-hero .hero-wrapper .hero-btn a {
+  color: #000000;
+  text-decoration: none;
+}
 .home-wrapper .home-hero .hero-wrapper .arrow-down {
   font-size: 38px;
   transform: translateY(-15px);

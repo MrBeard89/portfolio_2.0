@@ -66,6 +66,11 @@
 
       .hero-btn {
         @extend %Btn-style;
+
+        a {
+          color: v.$color-black;
+          text-decoration: none;
+        }
       }
 
       .arrow-down {
