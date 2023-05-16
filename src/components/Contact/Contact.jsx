@@ -20,6 +20,7 @@ export const Contact = () => {
                 type='text'
                 name='name'
                 placeholder='Enter Your Name'
+                pattern='[a-zA-Z]+'
                 required
               />
               <span></span>
