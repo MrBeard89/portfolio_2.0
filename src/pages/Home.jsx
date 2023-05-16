@@ -3,6 +3,7 @@ import { About } from '../components/About/About'
 import { Skills } from '../components/Skills/Skills'
 
 import { SlArrowDown } from 'react-icons/sl'
+import { Projects } from '../components/Projects/Projects'
 
 export const Home = () => {
   return (
@@ -25,6 +26,7 @@ export const Home = () => {
 
       <About />
       <Skills />
+      <Projects />
     </div>
   )
 }
