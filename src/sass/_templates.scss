@@ -47,6 +47,32 @@
   }
 }
 
+//Projects - Btn style
+%project-btns {
+  font-family: v.$font-family-comfortaa;
+  width: 110px;
+  padding: 5px;
+  border: none;
+  border-radius: 18px;
+  color: v.$color-black;
+  background-color: v.$color-red;
+  font-size: v.$fs-xxl;
+
+  box-shadow: 0px 8px 15px 1px v.$color-moderate-cyan;
+
+  &:is(:hover, :focus-visible) {
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: 0.3s ease-in;
+
+    p {
+      color: v.$color-white-cyan;
+      transform: translateX(-8px);
+      transition: 0.3s ease-in;
+      text-shadow: 3px 3px v.$color-black;
+    }
+  }
+}
 //Text style
 %Text-style {
   text-align: left;
@@ -187,4 +213,13 @@
   .progressdarkorange {
     background-color: v.$dark-orange;
   }
+}
+
+//Projects - Card imgs mobile screen s size
+%card-img-mobile-s {
+  z-index: -1;
+  position: absolute;
+  left: 40px;
+  top: 15px;
+  width: 224px;
 }

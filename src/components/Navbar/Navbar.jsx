@@ -62,7 +62,7 @@ export const Navbar = () => {
               </span>
             </HashLink>
 
-            <HashLink smooth to='/'>
+            <HashLink smooth to='#projects'>
               <span className='link-container'>
                 <li className='navlink'>
                   <h3>Projects</h3>

@@ -1,1 +1,122 @@
-/*# sourceMappingURL=Projects.css.map */
+.projects-wrapper .projects-container .projects-title {
+  position: relative;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.projects-wrapper .projects-container .projects-title::after {
+  position: absolute;
+  bottom: -15px;
+  right: 65px;
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: #fc4445;
+  border-radius: 5px;
+}
+
+.projects-wrapper .projects-container .project .project-info-wrapper .links-container .project-link button, .projects-wrapper .projects-container .project .project-info-wrapper .links-container .live-link button {
+  font-family: "Comfortaa", cursive;
+  width: 110px;
+  padding: 5px;
+  border: none;
+  border-radius: 18px;
+  color: #000000;
+  background-color: #fc4445;
+  font-size: 28px;
+  box-shadow: 0px 8px 15px 1px #55bcc9;
+}
+.projects-wrapper .projects-container .project .project-info-wrapper .links-container .project-link button:is(:hover, :focus-visible), .projects-wrapper .projects-container .project .project-info-wrapper .links-container .live-link button:is(:hover, :focus-visible) {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: 0.3s ease-in;
+}
+.projects-wrapper .projects-container .project .project-info-wrapper .links-container .project-link button:is(:hover, :focus-visible) p, .projects-wrapper .projects-container .project .project-info-wrapper .links-container .live-link button:is(:hover, :focus-visible) p {
+  color: #ffffff;
+  transform: translateX(-8px);
+  transition: 0.3s ease-in;
+  text-shadow: 3px 3px #000000;
+}
+
+.projects-wrapper .projects-container .project .project-img-container .card-img {
+  z-index: -1;
+  position: absolute;
+  left: 40px;
+  top: 15px;
+  width: 224px;
+}
+
+.projects-wrapper {
+  max-width: 100%;
+  font-family: "Comfortaa", cursive;
+  margin-bottom: 5rem;
+}
+.projects-wrapper .projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  max-width: 300px;
+  padding-top: 5rem;
+}
+.projects-wrapper .projects-container .projects-title {
+  width: 156px;
+  text-align: center;
+}
+.projects-wrapper .projects-container .project {
+  display: flex;
+  flex-direction: column;
+}
+.projects-wrapper .projects-container .project .project-img-container {
+  display: block;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.projects-wrapper .projects-container .project .project-img-container .vector {
+  width: 300px;
+}
+.projects-wrapper .projects-container .project .project-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 12px 2px #55bcc9;
+  border-radius: 0.8rem;
+  padding: 10px 5px 10px 5px;
+}
+.projects-wrapper .projects-container .project .project-info-wrapper .info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  line-height: 1.4rem;
+  font-size: 14px;
+}
+.projects-wrapper .projects-container .project .project-info-wrapper .info-container .info-title {
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+.projects-wrapper .projects-container .project .project-info-wrapper .btn-container {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.projects-wrapper .projects-container .project .project-info-wrapper .btn-container button {
+  font-family: "Comfortaa", cursive;
+  background-color: #55bcc9;
+  border: none;
+  border-radius: 5px;
+  padding: 4px;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+.projects-wrapper .projects-container .project .project-info-wrapper .links-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  width: 100%;
+}/*# sourceMappingURL=Projects.css.map */

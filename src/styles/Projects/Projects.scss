@@ -2,6 +2,103 @@
 @forward '../../sass/templates';
 
 .projects-wrapper {
+  max-width: 100%;
+  font-family: v.$font-family-comfortaa;
+  margin-bottom: v.$component-gap;
+
   .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: v.$component-gap;
+    max-width: v.$mobile-s-width;
+    padding-top: 5rem;
+
+    .projects-title {
+      @extend %title-style;
+      width: 156px;
+      text-align: center;
+    }
+
+    //Project container
+    .project {
+      display: flex;
+      flex-direction: column;
+
+      .project-img-container {
+        display: block;
+        position: relative;
+        margin-bottom: 2rem;
+
+        .vector {
+          width: v.$mobile-s-width;
+        }
+
+        .card-img {
+          @extend %card-img-mobile-s;
+        }
+      }
+
+      .project-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: v.$color-white-cyan;
+        box-shadow: 0px 0px 12px 2px v.$color-moderate-cyan;
+        border-radius: 0.8rem;
+        padding: 10px 5px 10px 5px;
+
+        .info-container {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          text-align: center;
+          line-height: 1.4rem;
+          font-size: v.$fs-s;
+
+          .info-title {
+            margin-bottom: 1rem;
+            font-size: v.$fs-h3;
+          }
+        }
+
+        .btn-container {
+          display: inline-block;
+          text-align: center;
+          width: 100%;
+
+          button {
+            font-family: v.$font-family-comfortaa;
+            background-color: v.$color-moderate-cyan;
+            border: none;
+            border-radius: 5px;
+            padding: 4px;
+            margin-right: 8px;
+            margin-top: 8px;
+          }
+        }
+
+        .links-container {
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          text-align: center;
+          width: 100%;
+
+          .project-link {
+            button {
+              @extend %project-btns;
+            }
+          }
+
+          .live-link {
+            button {
+              @extend %project-btns;
+            }
+          }
+        }
+      }
+    }
   }
 }
