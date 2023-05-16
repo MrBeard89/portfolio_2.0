@@ -6,6 +6,7 @@ import { SlArrowDown } from 'react-icons/sl'
 import { Projects } from '../components/Projects/Projects'
 
 import { HashLink } from 'react-router-hash-link'
+import { Contact } from '../components/Contact/Contact'
 
 export const Home = () => {
   return (
@@ -31,6 +32,7 @@ export const Home = () => {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </div>
   )
 }
