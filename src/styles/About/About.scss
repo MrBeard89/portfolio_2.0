@@ -1,6 +1,8 @@
 @forward '../../sass/templates';
 @use '../../sass/variables' as v;
 
+//Main wrapper
+
 .about-wrapper {
   display: flex;
   flex-direction: column;
@@ -8,6 +10,8 @@
   font-family: v.$font-family-comfortaa;
   width: 100%;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(245, 245, 245, 0.8));
+
+  //About container
 
   .about-container {
     display: flex;
@@ -35,6 +39,8 @@
       }
     }
 
+    //Text container
+
     .about-text-container {
       display: flex;
       flex-direction: column;
@@ -55,6 +61,8 @@
         @extend %Text-style;
       }
     }
+
+    //Contact button
 
     .btn-container {
       display: flex;
