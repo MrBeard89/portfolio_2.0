@@ -1,12 +1,13 @@
 import '../styles/Home/Home.scss'
+
 import { About } from '../components/About/About'
 import { Skills } from '../components/Skills/Skills'
+import { Projects } from '../components/Projects/Projects'
+import { Contact } from '../components/Contact/Contact'
+import { Footer } from '../components/Footer/Footer'
 
 import { SlArrowDown } from 'react-icons/sl'
-import { Projects } from '../components/Projects/Projects'
-
 import { HashLink } from 'react-router-hash-link'
-import { Contact } from '../components/Contact/Contact'
 
 export const Home = () => {
   return (
@@ -33,6 +34,7 @@ export const Home = () => {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   )
 }
