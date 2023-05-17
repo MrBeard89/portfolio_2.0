@@ -118,6 +118,9 @@
 }
 
 //Media queries
+
+//******** Breakpoint - sm 410px ********//
+
 @media only screen and (min-width: v.$breakpoint-sm) {
   .skills-container {
     width: v.$mobile-sm-width !important;
@@ -140,6 +143,31 @@
   }
 }
 
+//******** Breakpoint - m 576px ********//
+
+@media only screen and (min-width: v.$breakpoint-m) {
+  .skills-container {
+    width: v.$mobile-m-width !important;
+    transition: 1s ease-in-out;
+
+    .skills-bar-container {
+      min-width: v.$mobile-m-width !important;
+      transition: 1s ease-in-out;
+    }
+  }
+
+  //Language Skills Container
+  .lang-skills {
+    .lang-skills-title {
+      &::after {
+        right: 255px !important;
+        transition: 1s ease-in-out;
+      }
+    }
+  }
+}
+
+//
 //Keyframes
 
 @-webkit-keyframes progress-html {

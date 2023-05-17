@@ -236,6 +236,20 @@
     transition: 1s ease-in-out;
   }
 }
+@media only screen and (min-width: 576px) {
+  .skills-container {
+    width: 540px !important;
+    transition: 1s ease-in-out;
+  }
+  .skills-container .skills-bar-container {
+    min-width: 540px !important;
+    transition: 1s ease-in-out;
+  }
+  .lang-skills .lang-skills-title::after {
+    right: 255px !important;
+    transition: 1s ease-in-out;
+  }
+}
 @-webkit-keyframes progress-html {
   0% {
     width: 0%;

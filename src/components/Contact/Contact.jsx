@@ -90,9 +90,11 @@ export const Contact = () => {
 
             {/* Submit button - no action,no method , just snaps at top of the page */}
 
-            <button className='btn-submit' type='submit'>
-              Submit
-            </button>
+            <div className='submit-btn-container'>
+              <button className='btn-submit' type='submit'>
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </div>

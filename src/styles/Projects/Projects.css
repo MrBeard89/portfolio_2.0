@@ -134,4 +134,19 @@
     left: 85px !important;
     transition: 1s ease-in-out;
   }
+}
+@media only screen and (min-width: 576px) {
+  .projects-container {
+    width: 540px !important;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project-img-container .card-img {
+    left: 160px !important;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project .project-info-wrapper {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    transition: 1s ease-in-out;
+  }
 }/*# sourceMappingURL=Projects.css.map */

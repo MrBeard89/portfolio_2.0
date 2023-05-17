@@ -17,9 +17,10 @@
   border-radius: 5px;
 }
 
-.contact-wrapper .contact-container .contact-form-container .contact-form .btn-submit {
+.contact-wrapper .contact-container .contact-form-container .contact-form .submit-btn-container .btn-submit {
   font-family: "Comfortaa", cursive;
   padding: 15px 55px 15px 55px;
+  width: 300px;
   border: none;
   border-radius: 12px;
   color: #000000;
@@ -28,7 +29,7 @@
   margin-bottom: 2rem;
   box-shadow: 0px 15px 35px 3px #55bcc9;
 }
-.contact-wrapper .contact-container .contact-form-container .contact-form .btn-submit:is(:hover, :focus-visible, :active) {
+.contact-wrapper .contact-container .contact-form-container .contact-form .submit-btn-container .btn-submit:is(:hover, :focus-visible, :active) {
   cursor: pointer;
   transform: translateY(-3px);
   transition: 0.1s ease-in;
@@ -208,7 +209,12 @@
 .contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea::placeholder {
   font-family: "Comfortaa", cursive;
 }
-.contact-wrapper .contact-container .contact-form-container .contact-form .btn-submit {
+.contact-wrapper .contact-container .contact-form-container .contact-form .submit-btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .submit-btn-container .btn-submit {
   margin-top: 2rem;
 }
 
@@ -224,5 +230,28 @@
   .contact-container .contact-form-container .contact-form {
     width: 330px !important;
     transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form .submit-btn-container .btn-submit {
+    width: 390px !important;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .contact-container {
+    width: 540px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-text {
+    width: 390px !important;
+  }
+  .contact-container .contact-form-container {
+    width: 520px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form {
+    width: 480px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form .btn-submit {
+    width: 390px !important;
   }
 }/*# sourceMappingURL=Contact.css.map */

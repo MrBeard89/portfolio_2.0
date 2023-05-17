@@ -227,9 +227,15 @@
 
         //Submit button
 
-        .btn-submit {
-          margin-top: 2rem;
-          @extend %contact-btn;
+        .submit-btn-container {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+
+          .btn-submit {
+            margin-top: 2rem;
+            @extend %contact-btn;
+          }
         }
       }
     }
@@ -237,6 +243,9 @@
 }
 
 //Media queries
+
+//******** Breakpoint - sm 410px ********//
+
 @media only screen and (min-width: v.$breakpoint-sm) {
   .contact-container {
     width: v.$mobile-sm-width !important;
@@ -249,6 +258,39 @@
       .contact-form {
         width: v.$contact-form-sm-inner !important;
         transition: 1s ease-in-out;
+
+        .submit-btn-container {
+          .btn-submit {
+            width: v.$mobile-sm-width !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//******** Breakpoint - m 576px ********//
+
+@media only screen and (min-width: v.$breakpoint-m) {
+  .contact-container {
+    width: v.$mobile-m-width !important;
+    transition: 1s ease-in-out;
+
+    .contact-text {
+      width: v.$mobile-sm-width !important;
+    }
+
+    .contact-form-container {
+      width: v.$contact-form-m !important;
+      transition: 1s ease-in-out;
+
+      .contact-form {
+        width: v.$contact-form-m-inner !important;
+        transition: 1s ease-in-out;
+
+        .btn-submit {
+          width: v.$mobile-sm-width !important;
+        }
       }
     }
   }
