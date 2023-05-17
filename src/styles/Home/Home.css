@@ -120,21 +120,8 @@
   .hero-wrapper {
     width: 540px !important;
     transition: 1s ease-in-out;
-    padding-top: 5rem;
-    gap: 2rem;
-  }
-  .hero-wrapper .hero-title {
-    margin-left: 0 !important;
-  }
-  .hero-wrapper .hero-text {
-    text-align: center !important;
-    transition: 1s ease-in-out;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .hero-wrapper {
     padding-top: 8rem;
-    gap: 3rem !important;
+    gap: 3rem;
   }
   .hero-wrapper .hero-title {
     margin-left: 0 !important;

@@ -141,26 +141,8 @@
   .hero-wrapper {
     width: v.$mobile-m-width !important;
     transition: 1s ease-in-out;
-    padding-top: 5rem;
-    gap: 2rem;
-
-    .hero-title {
-      margin-left: 0 !important;
-    }
-
-    .hero-text {
-      text-align: center !important;
-      transition: 1s ease-in-out;
-    }
-  }
-}
-
-//******** Breakpoint - m 576px ********//
-
-@media only screen and (min-width: v.$breakpoint-m) {
-  .hero-wrapper {
     padding-top: 8rem;
-    gap: 3rem !important;
+    gap: 3rem;
 
     .hero-title {
       margin-left: 0 !important;
