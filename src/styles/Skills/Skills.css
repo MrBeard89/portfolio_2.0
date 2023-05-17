@@ -222,6 +222,20 @@
   margin-bottom: 1rem;
 }
 
+@media only screen and (min-width: 410px) {
+  .skills-container {
+    width: 390px !important;
+    transition: 1s ease-in-out;
+  }
+  .skills-container .skills-bar-container {
+    min-width: 390px !important;
+    transition: 1s ease-in-out;
+  }
+  .lang-skills .lang-skills-title::after {
+    right: 175px !important;
+    transition: 1s ease-in-out;
+  }
+}
 @-webkit-keyframes progress-html {
   0% {
     width: 0%;

@@ -70,7 +70,8 @@ $dark-orange: rgb(241, 111, 24);
 ///////////////////* Breakpoints *///////////////////
 
 $breakpoint-s: 320px;
-$breakpoint-sm: 576px;
+$breakpoint-sm: 410px;
+$breakpoint-m: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
@@ -82,6 +83,7 @@ $component-gap: 5rem;
 $first-top-gap: 4rem;
 
 $mobile-s-width: 300px;
+$mobile-sm-width: 390px;
 $mobile-m-width: 556px;
 $tablet-width: 748px;
 $desktop-m-width: 972px;
@@ -92,3 +94,10 @@ $desktop-xl-width: 1380px;
 
 $li-padding: 5px;
 $animation-delay: 0.7s;
+
+//Contact form widths
+$contact-form-s: 280px;
+$contact-form-s-inner: 240px;
+
+$contact-form-sm: 370px;
+$contact-form-sm-inner: 330px;

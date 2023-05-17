@@ -210,4 +210,19 @@
 }
 .contact-wrapper .contact-container .contact-form-container .contact-form .btn-submit {
   margin-top: 2rem;
+}
+
+@media only screen and (min-width: 410px) {
+  .contact-container {
+    width: 390px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container {
+    width: 370px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form {
+    width: 330px !important;
+    transition: 1s ease-in-out;
+  }
 }/*# sourceMappingURL=Contact.css.map */

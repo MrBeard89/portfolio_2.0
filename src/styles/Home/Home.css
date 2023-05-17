@@ -102,4 +102,17 @@
     transform: translateY(0px);
     transition: 0.3s ease;
   }
+}
+@media only screen and (min-width: 410px) {
+  .hero-wrapper {
+    width: 390px !important;
+    transition: 1s ease-in-out;
+  }
+  .hero-wrapper .hero-title {
+    margin-left: 3rem;
+  }
+  .hero-wrapper .hero-text {
+    text-align: center !important;
+    transition: 1s ease-in-out;
+  }
 }/*# sourceMappingURL=Home.css.map */

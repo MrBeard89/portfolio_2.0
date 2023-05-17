@@ -114,3 +114,20 @@
     transition: 0.3s ease;
   }
 }
+
+//Media queries
+@media only screen and (min-width: v.$breakpoint-sm) {
+  .hero-wrapper {
+    width: v.$mobile-sm-width !important;
+    transition: 1s ease-in-out;
+
+    .hero-title {
+      margin-left: 3rem;
+    }
+
+    .hero-text {
+      text-align: center !important;
+      transition: 1s ease-in-out;
+    }
+  }
+}

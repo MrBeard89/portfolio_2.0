@@ -74,9 +74,11 @@
   flex-direction: column;
 }
 .projects-wrapper .projects-container .project .project-img-container {
-  display: block;
+  display: flex;
+  justify-content: center;
   position: relative;
   margin-bottom: 2rem;
+  width: 100%;
 }
 .projects-wrapper .projects-container .project .project-img-container .vector {
   width: 300px;
@@ -122,4 +124,14 @@
   gap: 2rem;
   text-align: center;
   width: 100%;
+}
+@media only screen and (min-width: 410px) {
+  .projects-container {
+    width: 390px !important;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project-img-container .card-img {
+    left: 85px !important;
+    transition: 1s ease-in-out;
+  }
 }/*# sourceMappingURL=Projects.css.map */

@@ -117,6 +117,29 @@
   }
 }
 
+//Media queries
+@media only screen and (min-width: v.$breakpoint-sm) {
+  .skills-container {
+    width: v.$mobile-sm-width !important;
+    transition: 1s ease-in-out;
+
+    .skills-bar-container {
+      min-width: v.$mobile-sm-width !important;
+      transition: 1s ease-in-out;
+    }
+  }
+
+  //Language Skills Container
+  .lang-skills {
+    .lang-skills-title {
+      &::after {
+        right: 175px !important;
+        transition: 1s ease-in-out;
+      }
+    }
+  }
+}
+
 //Keyframes
 
 @-webkit-keyframes progress-html {

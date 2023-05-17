@@ -39,9 +39,11 @@
       //Image container
 
       .project-img-container {
-        display: block;
+        display: flex;
+        justify-content: center;
         position: relative;
         margin-bottom: 2rem;
+        width: 100%;
 
         //Vector laptop
 
@@ -118,6 +120,23 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+//Media queries
+@media only screen and (min-width: v.$breakpoint-sm) {
+  .projects-container {
+    width: v.$mobile-sm-width !important;
+    transition: 1s ease-in-out;
+
+    .project-img-container {
+      //Project img
+
+      .card-img {
+        left: 85px !important;
+        transition: 1s ease-in-out;
       }
     }
   }
