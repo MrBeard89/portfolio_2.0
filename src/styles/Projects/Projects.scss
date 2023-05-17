@@ -35,6 +35,7 @@
     .project {
       display: flex;
       flex-direction: column;
+      width: 100%;
 
       //Image container
 
@@ -157,6 +158,37 @@
 
       .card-img {
         left: 160px !important;
+        transition: 1s ease-in-out;
+      }
+    }
+
+    .project {
+      .project-info-wrapper {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        transition: 1s ease-in-out;
+      }
+    }
+  }
+}
+
+//******** Breakpoint - md 768px ********//
+
+@media only screen and (min-width: v.$breakpoint-md) {
+  .projects-container {
+    width: v.$tablet-width !important;
+    transition: 1s ease-in-out;
+
+    .project-img-container {
+      .vector {
+        width: v.$mobile-m-width !important;
+      }
+      //Project img
+
+      .card-img {
+        width: v.$mobile-sm-width !important;
+        left: 170px !important;
+        top: 30px !important;
         transition: 1s ease-in-out;
       }
     }

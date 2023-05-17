@@ -13,6 +13,9 @@ import { Footer } from '../components/Footer/Footer'
 import { SlArrowDown } from 'react-icons/sl'
 import { HashLink } from 'react-router-hash-link'
 
+//Import me img
+import Me from '../../src/assets/images/Me/en.jpg'
+
 export const Home = () => {
   return (
     <div className='home-wrapper'>
@@ -23,6 +26,11 @@ export const Home = () => {
           <h1 className='hero-title'>
             <span className='smaller-text'>Hey, I'm</span> Norbert Kovacs
           </h1>
+
+          <div className='about-img-container'>
+            <div className='img-border'></div>
+            <img className='img-me' src={Me} alt="It's me" />
+          </div>
 
           {/* Text */}
           <p className='hero-text'>

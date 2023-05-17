@@ -250,6 +250,20 @@
     transition: 1s ease-in-out;
   }
 }
+@media only screen and (min-width: 768px) {
+  .skills-container {
+    width: 730px !important;
+    transition: 1s ease-in-out;
+  }
+  .skills-container .skills-bar-container {
+    min-width: 730px !important;
+    transition: 1s ease-in-out;
+  }
+  .lang-skills .lang-skills-title::after {
+    right: 345px !important;
+    transition: 1s ease-in-out;
+  }
+}
 @-webkit-keyframes progress-html {
   0% {
     width: 0%;

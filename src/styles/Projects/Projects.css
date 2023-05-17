@@ -72,6 +72,7 @@
 .projects-wrapper .projects-container .project {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .projects-wrapper .projects-container .project .project-img-container {
   display: flex;
@@ -142,6 +143,26 @@
   }
   .projects-container .project-img-container .card-img {
     left: 160px !important;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project .project-info-wrapper {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    transition: 1s ease-in-out;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .projects-container {
+    width: 730px !important;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project-img-container .vector {
+    width: 540px !important;
+  }
+  .projects-container .project-img-container .card-img {
+    width: 390px !important;
+    left: 170px !important;
+    top: 30px !important;
     transition: 1s ease-in-out;
   }
   .projects-container .project .project-info-wrapper {

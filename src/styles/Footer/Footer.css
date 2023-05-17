@@ -85,4 +85,10 @@
     width: 540px !important;
     transition: 1s ease-in-out;
   }
+}
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    width: 540px !important;
+    transition: 1s ease-in-out;
+  }
 }/*# sourceMappingURL=Footer.css.map */

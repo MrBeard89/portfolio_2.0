@@ -31,7 +31,7 @@ export const Projects = () => {
                 <img
                   className='card-img'
                   src={require(`../../assets/images/card-images/${project.imglink}`)}
-                  alt=''
+                  alt='Project image'
                 />
               </div>
 
