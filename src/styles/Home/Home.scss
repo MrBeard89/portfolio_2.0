@@ -258,3 +258,43 @@
     width: v.$desktop-m-width !important;
   }
 }
+
+//******** Breakpoint - xl 1200px ********//
+
+@media only screen and (min-width: v.$breakpoint-xl) {
+  .hero-wrapper {
+    width: v.$desktop-l-width !important;
+
+    .hero-title {
+      margin-bottom: 0 !important;
+    }
+    .hero-btn {
+      margin-bottom: 1rem !important;
+    }
+
+    .about-img-container {
+      display: block !important;
+
+      .img-me {
+        position: relative !important;
+
+        width: v.$content-desktop-img-me-width !important;
+
+        &:hover {
+          filter: contrast(120%);
+        }
+      }
+
+      //Image border
+
+      .img-border {
+        width: v.$content-desktop-img-me-width !important;
+        height: v.$content-desktop-img-me-border-height !important;
+
+        &:hover {
+          filter: hue-rotate(90deg);
+        }
+      }
+    }
+  }
+}

@@ -126,3 +126,37 @@
     }
   }
 }
+
+//******** Breakpoint - xl 1200px ********//
+
+@media only screen and (min-width: v.$breakpoint-xl) {
+  .footer-wrapper {
+    height: 100%;
+    .footer-container {
+      height: 40vh;
+      width: v.$tablet-width !important;
+      transition: 1s ease-in-out;
+
+      .social-icon {
+        font-size: v.$fs-h1 !important;
+      }
+    }
+
+    //Copyright container
+
+    .copyright-container {
+      margin-bottom: 0 !important;
+
+      .copy {
+        padding-top: 5rem;
+
+        //Name link
+        .footer-copy-link {
+          a {
+            color: v.$color-soft-blue;
+          }
+        }
+      }
+    }
+  }
+}

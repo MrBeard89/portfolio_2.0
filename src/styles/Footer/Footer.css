@@ -101,4 +101,26 @@
     width: 730px !important;
     transition: 1s ease-in-out;
   }
+}
+@media only screen and (min-width: 1200px) {
+  .footer-wrapper {
+    height: 100%;
+  }
+  .footer-wrapper .footer-container {
+    height: 40vh;
+    width: 730px !important;
+    transition: 1s ease-in-out;
+  }
+  .footer-wrapper .footer-container .social-icon {
+    font-size: 38px !important;
+  }
+  .footer-wrapper .copyright-container {
+    margin-bottom: 0 !important;
+  }
+  .footer-wrapper .copyright-container .copy {
+    padding-top: 5rem;
+  }
+  .footer-wrapper .copyright-container .copy .footer-copy-link a {
+    color: #97caef;
+  }
 }/*# sourceMappingURL=Footer.css.map */

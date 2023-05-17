@@ -118,3 +118,16 @@
     transition: 1s ease-in-out;
   }
 }
+
+//******** Breakpoint - xl 1200px ********//
+
+@media only screen and (min-width: v.$breakpoint-xl) {
+  .about-container {
+    width: v.$desktop-l-width !important;
+    transition: 1s ease-in-out;
+
+    .introduction-container {
+      width: 100%;
+    }
+  }
+}

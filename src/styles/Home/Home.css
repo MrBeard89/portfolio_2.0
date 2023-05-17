@@ -212,4 +212,32 @@
   .hero-wrapper {
     width: 940px !important;
   }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-wrapper {
+    width: 1150px !important;
+  }
+  .hero-wrapper .hero-title {
+    margin-bottom: 0 !important;
+  }
+  .hero-wrapper .hero-btn {
+    margin-bottom: 1rem !important;
+  }
+  .hero-wrapper .about-img-container {
+    display: block !important;
+  }
+  .hero-wrapper .about-img-container .img-me {
+    position: relative !important;
+    width: 450px !important;
+  }
+  .hero-wrapper .about-img-container .img-me:hover {
+    filter: contrast(120%);
+  }
+  .hero-wrapper .about-img-container .img-border {
+    width: 450px !important;
+    height: 450px !important;
+  }
+  .hero-wrapper .about-img-container .img-border:hover {
+    filter: hue-rotate(90deg);
+  }
 }/*# sourceMappingURL=Home.css.map */

@@ -230,4 +230,60 @@
     transition: 0.1s ease-in;
     text-shadow: none !important;
   }
+}
+@media only screen and (min-width: 1200px) {
+  .projects-wrapper {
+    overflow: hidden;
+  }
+  .projects-container {
+    width: 1380px !important;
+    transition: 1s ease-in-out;
+    gap: 12rem !important;
+  }
+  .projects-container .project-img-container {
+    width: fit-content !important;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project-img-container .vector {
+    width: 540px !important;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project-img-container .card-img {
+    width: 390px !important;
+    left: 78px !important;
+    top: 30px !important;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project {
+    position: relative;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project .project-info-wrapper {
+    padding: 1rem !important;
+    transition: 1s ease-in-out;
+    width: 540px;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project .project-info-wrapper .links-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem !important;
+    margin-top: 4rem;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project::after {
+    z-index: -2;
+    position: absolute;
+    bottom: 120px;
+    content: "";
+    width: 150%;
+    height: 10vh;
+    background-color: #fc4445;
+    transform: rotate(10deg);
+    transition: 1s ease-in-out;
+  }
 }/*# sourceMappingURL=Projects.css.map */

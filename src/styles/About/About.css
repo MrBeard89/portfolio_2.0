@@ -135,4 +135,13 @@
     width: 940px !important;
     transition: 1s ease-in-out;
   }
+}
+@media only screen and (min-width: 1200px) {
+  .about-container {
+    width: 1150px !important;
+    transition: 1s ease-in-out;
+  }
+  .about-container .introduction-container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=About.css.map */
