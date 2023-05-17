@@ -239,6 +239,7 @@
     width: 1380px !important;
     transition: 1s ease-in-out;
     gap: 12rem !important;
+    margin-bottom: 2rem;
   }
   .projects-container .project-img-container {
     width: fit-content !important;
@@ -278,12 +279,12 @@
   .projects-container .project::after {
     z-index: -2;
     position: absolute;
-    bottom: 120px;
+    bottom: 150px;
     content: "";
-    width: 150%;
+    width: 250%;
     height: 10vh;
     background-color: #fc4445;
-    transform: rotate(10deg);
+    transform: rotate(5deg);
     transition: 1s ease-in-out;
   }
 }/*# sourceMappingURL=Projects.css.map */
