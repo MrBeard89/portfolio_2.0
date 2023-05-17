@@ -1,0 +1,74 @@
+@use '../../sass/variables' as v;
+@forward '../../sass/templates';
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: v.$font-family-comfortaa;
+  background-color: v.$color-black;
+  color: v.$color-white-cyan;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: v.$mobile-s-width;
+    padding-top: 1rem;
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .social-title {
+        @extend %title-style;
+        width: 156px;
+        text-align: center;
+      }
+
+      .social-icons-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1rem;
+
+        a {
+          color: v.$color-white-cyan;
+        }
+
+        .social-icon {
+          font-size: v.$fs-h2;
+
+          &:is(:hover, :focus-visible) {
+            color: v.$color-red;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .footer-outro {
+      .footer-outro-text {
+        text-align: center;
+      }
+    }
+
+    .copyright-container {
+      margin-bottom: 1rem;
+      .copy {
+        color: v.$color-moderate-cyan;
+        font-size: v.$fs-s;
+
+        .footer-copy-link {
+          a {
+            color: v.$color-soft-blue;
+          }
+        }
+      }
+    }
+  }
+}
