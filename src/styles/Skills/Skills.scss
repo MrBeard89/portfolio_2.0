@@ -1,6 +1,8 @@
 @use '../../sass/variables' as v;
 @forward '../../sass/templates';
 
+//Main wrapper
+
 .skills-wrapper {
   display: flex;
   flex-direction: column;
@@ -35,6 +37,8 @@
       }
     }
 
+    //Progress bar section main container
+
     .skills-bar-container {
       background-color: v.$color-white-cyan;
       box-shadow: 0px 0px 12px 2px v.$color-moderate-cyan;
@@ -50,6 +54,8 @@
         width: 100%;
         padding: v.$li-padding;
         margin-bottom: 10px;
+
+        //Title
 
         .progressbar-title {
           h3 {
@@ -83,10 +89,10 @@
             animation-fill-mode: both;
           }
 
-          //Animation Connect to additional divs + delay set
+          //Animation Connect to additional divs + delay set - via templates
           @extend %connect-anim;
 
-          //Progress Colors
+          //Progress Colors - via templates
           @extend %colors-progressbar;
         } // end bar-container
       }
