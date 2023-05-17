@@ -130,6 +130,32 @@
   color: #ffffff;
   font-size: 24px;
 }
+.navbar-mobile .navlinks .toggle-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  height: fit-content;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  border-top: 1px solid rgba(192, 192, 192, 0.4509803922);
+}
+.navbar-mobile .navlinks .toggle-container .flag-toggle {
+  width: 3rem;
+  background-color: transparent;
+  border: none;
+}
+.navbar-mobile .navlinks .toggle-container .flag-toggle:is(:hover, :focus-visible) {
+  cursor: pointer;
+}
+.navbar-mobile .navlinks .toggle-container .flag-toggle::after {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 2px;
+  background-color: #fc4445;
+}
 .navbar-mobile .decor-arrow {
   z-index: -1;
   position: absolute;

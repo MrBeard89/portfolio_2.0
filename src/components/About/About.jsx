@@ -1,4 +1,5 @@
 import React from 'react'
+import { useContext } from 'react'
 
 //Imported scss
 
@@ -6,8 +7,13 @@ import '../../styles/About/About.scss'
 //Imported Hashlink
 
 import { HashLink } from 'react-router-hash-link'
+import { LanguageContext } from '../../context/LanguageContext'
+
+//Import Language Library
+const i18n = require('../../utils/i18n')
 
 export const About = () => {
+  const { language } = useContext(LanguageContext)
   return (
     <div className='about-wrapper' id='about'>
       {/* Main container */}
