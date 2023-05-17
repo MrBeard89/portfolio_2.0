@@ -51,7 +51,7 @@
         .social-icon {
           font-size: v.$fs-h2;
 
-          &:is(:hover, :focus-visible) {
+          &:is(:hover, :focus-visible, :active) {
             color: v.$color-red;
             cursor: pointer;
           }
@@ -69,6 +69,7 @@
 
     .copyright-container {
       margin-bottom: 1rem;
+
       .copy {
         color: v.$color-moderate-cyan;
         font-size: v.$fs-xs;

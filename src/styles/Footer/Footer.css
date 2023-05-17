@@ -56,7 +56,7 @@
 .footer-wrapper .footer-container .social .social-icons-container .social-icon {
   font-size: 30px;
 }
-.footer-wrapper .footer-container .social .social-icons-container .social-icon:is(:hover, :focus-visible) {
+.footer-wrapper .footer-container .social .social-icons-container .social-icon:is(:hover, :focus-visible, :active) {
   color: #fc4445;
   cursor: pointer;
 }

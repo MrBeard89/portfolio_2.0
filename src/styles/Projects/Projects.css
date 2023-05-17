@@ -28,12 +28,12 @@
   font-size: 28px;
   box-shadow: 0px 8px 15px 1px #55bcc9;
 }
-.projects-wrapper .projects-container .project .project-info-wrapper .links-container .project-link button:is(:hover, :focus-visible), .projects-wrapper .projects-container .project .project-info-wrapper .links-container .live-link button:is(:hover, :focus-visible) {
+.projects-wrapper .projects-container .project .project-info-wrapper .links-container .project-link button:is(:hover, :focus-visible, :active), .projects-wrapper .projects-container .project .project-info-wrapper .links-container .live-link button:is(:hover, :focus-visible, :active) {
   cursor: pointer;
   transform: translateY(-3px);
   transition: 0.3s ease-in;
 }
-.projects-wrapper .projects-container .project .project-info-wrapper .links-container .project-link button:is(:hover, :focus-visible) p, .projects-wrapper .projects-container .project .project-info-wrapper .links-container .live-link button:is(:hover, :focus-visible) p {
+.projects-wrapper .projects-container .project .project-info-wrapper .links-container .project-link button:is(:hover, :focus-visible, :active) p, .projects-wrapper .projects-container .project .project-info-wrapper .links-container .live-link button:is(:hover, :focus-visible, :active) p {
   color: #ffffff;
   transform: translateX(-8px);
   transition: 0.3s ease-in;

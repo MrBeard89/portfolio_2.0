@@ -35,7 +35,7 @@
         border-radius: 50%;
         opacity: 0.5;
 
-        &:is(:hover, :focus-visible) {
+        &:is(:hover, :focus-visible, :active) {
           opacity: 1;
           border: 1px solid v.$color-moderate-cyan;
         }
@@ -52,14 +52,14 @@
         padding-top: 5px;
         padding-left: 15px;
 
-        &:is(:hover, :focus-visible) {
+        &:is(:hover, :focus-visible, :active) {
           opacity: 1;
           color: v.$color-red;
         }
       }
 
       .logo {
-        &:is(:hover, :focus-visible) + .logo-name {
+        &:is(:hover, :focus-visible, :active) + .logo-name {
           opacity: 1;
           color: v.$color-red;
         }
@@ -86,7 +86,7 @@
       font-size: v.$fs-xl;
       color: v.$color-black;
 
-      &:is(:hover, :focus-visible) {
+      &:is(:hover, :focus-visible, :active) {
         cursor: pointer;
         animation: menuShake 0.4s infinite;
       }
@@ -147,7 +147,7 @@
         padding-right: 1.5rem;
         border-top: 1px solid #c0c0c073;
 
-        &:is(:hover, :focus-visible) {
+        &:is(:hover, :focus-visible, :active) {
           background-color: v.$color-red;
           color: v.$color-white-cyan;
 

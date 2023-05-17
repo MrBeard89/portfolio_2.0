@@ -28,7 +28,7 @@
   margin-bottom: 2rem;
   box-shadow: 0px 15px 35px 3px #55bcc9;
 }
-.contact-wrapper .contact-container .contact-form-container .contact-form .btn-submit:is(:hover, :focus-visible) {
+.contact-wrapper .contact-container .contact-form-container .contact-form .btn-submit:is(:hover, :focus-visible, :active) {
   cursor: pointer;
   transform: translateY(-3px);
   transition: 0.1s ease-in;

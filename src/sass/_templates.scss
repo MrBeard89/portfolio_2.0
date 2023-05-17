@@ -33,7 +33,7 @@
   margin-bottom: v.$component-gap;
   box-shadow: 0px 15px 35px 3px v.$color-moderate-cyan;
 
-  &:is(:hover, :focus-visible) {
+  &:is(:hover, :focus-visible, :active) {
     cursor: pointer;
     transform: translateY(-3px);
     transition: 0.3s ease-in;
@@ -60,7 +60,7 @@
 
   box-shadow: 0px 8px 15px 1px v.$color-moderate-cyan;
 
-  &:is(:hover, :focus-visible) {
+  &:is(:hover, :focus-visible, :active) {
     cursor: pointer;
     transform: translateY(-3px);
     transition: 0.3s ease-in;
@@ -86,7 +86,7 @@
   margin-bottom: 2rem;
   box-shadow: 0px 15px 35px 3px v.$color-moderate-cyan;
 
-  &:is(:hover, :focus-visible) {
+  &:is(:hover, :focus-visible, :active) {
     cursor: pointer;
     transform: translateY(-3px);
     transition: 0.1s ease-in;

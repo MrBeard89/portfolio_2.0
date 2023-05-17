@@ -25,7 +25,7 @@
   border-radius: 50%;
   opacity: 0.5;
 }
-.navbar-wrapper .navbar-container .logo-container .logo:is(:hover, :focus-visible) {
+.navbar-wrapper .navbar-container .logo-container .logo:is(:hover, :focus-visible, :active) {
   opacity: 1;
   border: 1px solid #55bcc9;
 }
@@ -38,11 +38,11 @@
   padding-top: 5px;
   padding-left: 15px;
 }
-.navbar-wrapper .navbar-container .logo-container .logo-name:is(:hover, :focus-visible) {
+.navbar-wrapper .navbar-container .logo-container .logo-name:is(:hover, :focus-visible, :active) {
   opacity: 1;
   color: #fc4445;
 }
-.navbar-wrapper .navbar-container .logo-container .logo:is(:hover, :focus-visible) + .logo-name {
+.navbar-wrapper .navbar-container .logo-container .logo:is(:hover, :focus-visible, :active) + .logo-name {
   opacity: 1;
   color: #fc4445;
 }
@@ -60,7 +60,7 @@
   font-size: 24px;
   color: #000000;
 }
-.navbar-wrapper .navbar-container .hamburger:is(:hover, :focus-visible) {
+.navbar-wrapper .navbar-container .hamburger:is(:hover, :focus-visible, :active) {
   cursor: pointer;
   animation: menuShake 0.4s infinite;
 }
@@ -110,14 +110,14 @@
   padding-right: 1.5rem;
   border-top: 1px solid rgba(192, 192, 192, 0.4509803922);
 }
-.navbar-mobile .navlinks a .navlink:is(:hover, :focus-visible) {
+.navbar-mobile .navlinks a .navlink:is(:hover, :focus-visible, :active) {
   background-color: #fc4445;
   color: #ffffff;
 }
-.navbar-mobile .navlinks a .navlink:is(:hover, :focus-visible) .hover-arrow {
+.navbar-mobile .navlinks a .navlink:is(:hover, :focus-visible, :active) .hover-arrow {
   opacity: 1;
 }
-.navbar-mobile .navlinks a .navlink:is(:hover, :focus-visible) h3 {
+.navbar-mobile .navlinks a .navlink:is(:hover, :focus-visible, :active) h3 {
   transform: translateX(-15px);
   transition: 0.15s ease-in;
   text-shadow: 8px 5px #000000;

@@ -10,12 +10,12 @@
   margin-bottom: 5rem;
   box-shadow: 0px 15px 35px 3px #55bcc9;
 }
-.home-wrapper .home-hero .hero-wrapper .hero-btn:is(:hover, :focus-visible) {
+.home-wrapper .home-hero .hero-wrapper .hero-btn:is(:hover, :focus-visible, :active) {
   cursor: pointer;
   transform: translateY(-3px);
   transition: 0.3s ease-in;
 }
-.home-wrapper .home-hero .hero-wrapper .hero-btn:is(:hover, :focus-visible) p {
+.home-wrapper .home-hero .hero-wrapper .hero-btn:is(:hover, :focus-visible, :active) p {
   color: #ffffff;
   transform: translateX(-8px);
   transition: 0.3s ease-in;

@@ -9,7 +9,6 @@
   align-items: center;
   font-family: v.$font-family-comfortaa;
   width: 100%;
-
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(245, 245, 245, 0.8));
 
   //About container
@@ -70,6 +69,7 @@
       display: flex;
       width: v.$mobile-s-width;
       justify-content: center;
+
       a {
         height: 62px;
       }
