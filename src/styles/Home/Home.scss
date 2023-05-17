@@ -154,3 +154,22 @@
     }
   }
 }
+
+//******** Breakpoint - m 576px ********//
+
+@media only screen and (min-width: v.$breakpoint-m) {
+  .hero-wrapper {
+    padding-top: 8rem;
+    gap: 3rem !important;
+
+    .hero-title {
+      margin-left: 0 !important;
+      font-size: 45px !important;
+    }
+
+    .hero-text {
+      text-align: center !important;
+      transition: 1s ease-in-out;
+    }
+  }
+}

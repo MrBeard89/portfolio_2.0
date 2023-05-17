@@ -130,4 +130,18 @@
     text-align: center !important;
     transition: 1s ease-in-out;
   }
+}
+@media only screen and (min-width: 576px) {
+  .hero-wrapper {
+    padding-top: 8rem;
+    gap: 3rem !important;
+  }
+  .hero-wrapper .hero-title {
+    margin-left: 0 !important;
+    font-size: 45px !important;
+  }
+  .hero-wrapper .hero-text {
+    text-align: center !important;
+    transition: 1s ease-in-out;
+  }
 }/*# sourceMappingURL=Home.css.map */
