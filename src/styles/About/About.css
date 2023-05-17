@@ -75,6 +75,7 @@
   align-items: flex-start;
   width: 300px;
   padding-top: 5rem;
+  margin-bottom: 5rem;
 }
 .about-wrapper .about-container .introduction-container {
   display: flex;
@@ -107,4 +108,7 @@
   display: flex;
   width: 300px;
   justify-content: center;
+}
+.about-wrapper .about-container .btn-container a {
+  height: 62px;
 }/*# sourceMappingURL=About.css.map */
