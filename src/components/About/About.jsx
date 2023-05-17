@@ -24,6 +24,7 @@ export const About = () => {
             product. Check out some of my work in the
             <span className='highlighted-text'> Projects</span> section.
           </p>
+
           <p className='about-text'>
             I also like sharing content related to the stuff that I have learned over 1 year in
             <span className='highlighted-text'> Web Development</span> at Webler Studios so it can

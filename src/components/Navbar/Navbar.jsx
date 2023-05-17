@@ -79,15 +79,6 @@ export const Navbar = () => {
                 </li>
               </span>
             </HashLink>
-
-            <HashLink smooth to='/'>
-              <span className='link-container'>
-                <li className='navlink'>
-                  <h3>Hobby</h3>
-                  <IoMdArrowDropright className='hover-arrow' />
-                </li>
-              </span>
-            </HashLink>
           </ul>
         </div>
       </div>

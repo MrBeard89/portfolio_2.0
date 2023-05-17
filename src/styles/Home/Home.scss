@@ -2,6 +2,8 @@
 @forward '../../sass/templates';
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+//Main wrapper
+
 .home-wrapper {
   display: flex;
   flex-direction: column;
@@ -9,6 +11,8 @@
   height: fit-content;
   width: 100%;
   margin-top: v.$first-top-gap;
+
+  //Hero container
 
   .home-hero {
     display: flex;
@@ -28,6 +32,8 @@
       height: 100vh;
       width: v.$mobile-s-width;
 
+      //Hero title
+
       .hero-title {
         font-family: v.$font-family-kanit;
         font-weight: v.$kanit-weight-700;
@@ -38,6 +44,8 @@
         padding-left: 16px;
         margin-bottom: 2rem;
 
+        //Inside title smaller text
+
         .smaller-text {
           font-size: v.$fs-h3;
           opacity: 0.5;
@@ -46,6 +54,8 @@
         }
       }
 
+      //Hero text
+
       .hero-text {
         text-align: left;
         padding-left: 16px;
@@ -53,6 +63,8 @@
         font-size: v.$fs-xl;
         margin-bottom: 4rem;
         color: v.$color-soft-black;
+
+        //Frontend developer text highlight
 
         .dev-highlight {
           font-weight: v.$comfortaa-weight-700;
@@ -64,6 +76,8 @@
         }
       }
 
+      //Projects button
+
       .hero-btn {
         @extend %Btn-style;
 
@@ -72,6 +86,8 @@
           text-decoration: none;
         }
       }
+
+      //Decor arrow down
 
       .arrow-down {
         font-size: v.$fs-h1;
