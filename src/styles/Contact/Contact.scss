@@ -63,6 +63,7 @@
         //Form field for each input
 
         .contact-form-field {
+          position: relative;
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
@@ -89,14 +90,14 @@
 
             &:not(:focus) + span::after {
               position: absolute;
-              left: 50px;
+              left: 10px;
               content: 'Please write a valid name';
               font-size: v.$fs-xs;
             }
 
             &:valid + span::after {
               position: absolute;
-              left: 50px;
+              left: 10px;
               content: 'Valid name';
               font-size: v.$fs-xs;
               color: green;
@@ -138,14 +139,14 @@
 
             &:not(:focus) + span::after {
               position: absolute;
-              left: 50px;
+              left: 10px;
               content: 'Please write a valid email';
               font-size: v.$fs-xs;
             }
 
             &:valid + span::after {
               position: absolute;
-              left: 50px;
+              left: 10px;
               content: 'Valid email';
               font-size: v.$fs-xs;
               color: green;
@@ -174,7 +175,6 @@
 
           //Input - Textarea
           .contact-form-textarea {
-            position: relative;
             font-family: v.$font-family-comfortaa;
             padding-top: 10px;
             padding-left: 10px;
@@ -190,14 +190,14 @@
 
             &:not(:focus) + span::after {
               position: absolute;
-              left: 50px;
+              left: 10px;
               content: 'Please write a message';
               font-size: v.$fs-xs;
             }
 
             &:valid + span::after {
               position: absolute;
-              left: 50px;
+              left: 10px;
               content: 'Valid message';
               font-size: v.$fs-xs;
               color: green;
