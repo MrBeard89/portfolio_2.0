@@ -166,4 +166,47 @@
     transform: rotate(0);
     transition: 0.2s ease-in;
   }
+}
+@media only screen and (min-width: 992px) {
+  .navbar-mobile {
+    display: none;
+  }
+  .hamburger {
+    display: none !important;
+  }
+  .close {
+    display: none !important;
+  }
+  .navlinks-container {
+    display: flex !important;
+  }
+  .navlinks-container .navlinks {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 5px 30px 5px 5px;
+  }
+  .navlinks-container .navlinks a {
+    text-decoration: none;
+    color: #55bcc9;
+    letter-spacing: 2px;
+  }
+  .navlinks-container .navlinks .navlink {
+    position: relative;
+    display: flex;
+  }
+  .navlinks-container .navlinks .navlink:is(:hover, :active) {
+    color: #fc4445;
+  }
+  .navlinks-container .navlinks .navlink:is(:hover, :active) .hover-arrow {
+    display: block !important;
+  }
+  .navlinks-container .navlinks .navlink .hover-arrow {
+    display: none !important;
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    font-size: 24px;
+    color: #fc4445;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

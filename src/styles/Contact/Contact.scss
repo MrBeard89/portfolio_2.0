@@ -322,3 +322,30 @@
     }
   }
 }
+
+//******** Breakpoint - lg 992px ********//
+
+@media only screen and (min-width: v.$breakpoint-lg) {
+  .contact-container {
+    width: v.$desktop-m-width !important;
+    transition: 1s ease-in-out;
+
+    .contact-text {
+      width: v.$mobile-m-width !important;
+    }
+
+    .contact-form-container {
+      width: v.$contact-form-md !important;
+      transition: 1s ease-in-out;
+
+      .contact-form {
+        width: v.$contact-form-md-inner !important;
+        transition: 1s ease-in-out;
+
+        .btn-submit {
+          width: v.$mobile-sm-width !important;
+        }
+      }
+    }
+  }
+}

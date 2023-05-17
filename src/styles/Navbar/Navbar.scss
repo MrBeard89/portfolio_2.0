@@ -219,5 +219,66 @@
   }
 }
 //Media Queries
-@media only screen and (max-width: 320px) {
+
+//******** Breakpoint - lg 992px ********//
+
+@media only screen and (min-width: v.$breakpoint-lg) {
+  //Mobile menu disabled
+
+  .navbar-mobile {
+    display: none;
+  }
+
+  //Mobile menu icons - Disabling it desktop mode
+
+  .hamburger {
+    display: none !important;
+  }
+
+  .close {
+    display: none !important;
+  }
+
+  //Desktop Navbar
+
+  .navlinks-container {
+    display: flex !important;
+
+    //Navlinks container
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 5px 30px 5px 5px;
+
+      a {
+        text-decoration: none;
+        color: v.$color-moderate-cyan;
+        letter-spacing: 2px;
+      }
+
+      .navlink {
+        position: relative;
+        display: flex;
+
+        &:is(:hover, :active) {
+          color: v.$color-red;
+
+          .hover-arrow {
+            display: block !important;
+          }
+        }
+
+        .hover-arrow {
+          display: none !important;
+          position: absolute;
+          left: -25px;
+          top: 3px;
+          font-size: v.$fs-xl;
+          color: v.$color-red;
+        }
+      }
+    }
+  }
 }

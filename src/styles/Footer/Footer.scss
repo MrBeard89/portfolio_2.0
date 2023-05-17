@@ -113,3 +113,16 @@
     transition: 1s ease-in-out;
   }
 }
+
+//******** Breakpoint - lg 992px ********//
+
+@media only screen and (min-width: v.$breakpoint-lg) {
+  .footer-wrapper {
+    height: 100%;
+    .footer-container {
+      height: 40vh;
+      width: v.$tablet-width !important;
+      transition: 1s ease-in-out;
+    }
+  }
+}

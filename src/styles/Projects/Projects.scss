@@ -202,3 +202,87 @@
     }
   }
 }
+
+//******** Breakpoint - lg 992px ********//
+
+@media only screen and (min-width: v.$breakpoint-lg) {
+  .projects-container {
+    width: v.$desktop-m-width !important;
+    transition: 1s ease-in-out;
+
+    .project-img-container {
+      .vector {
+        width: v.$tablet-width !important;
+      }
+      //Project img
+
+      .card-img {
+        width: v.$mobile-m-width !important;
+        left: 205px !important;
+        top: 40px !important;
+        transition: 1s ease-in-out;
+      }
+    }
+
+    .project {
+      .project-info-wrapper {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        transition: 1s ease-in-out;
+
+        //Button links - Code and Live
+
+        .links-container {
+          display: flex;
+          justify-content: center;
+          gap: v.$component-gap !important;
+          margin-top: 4rem;
+
+          .project-link {
+            button {
+              width: 220px !important;
+              padding: 15px !important;
+              border-radius: 2px !important;
+              box-shadow: none !important;
+
+              &:is(:hover, :focus-visible, :active) {
+                transform: none !important;
+                transition: 0.1s ease-in;
+                background-color: v.$color-black;
+
+                p {
+                  color: v.$color-red !important;
+                  transform: none !important;
+                  transition: 0.1s ease-in;
+                  text-shadow: none !important;
+                }
+              }
+            }
+          }
+
+          .live-link {
+            button {
+              width: 220px !important;
+              padding: 15px !important;
+              border-radius: 2px !important;
+              box-shadow: none !important;
+
+              &:is(:hover, :focus-visible, :active) {
+                transform: none !important;
+                transition: 0.1s ease-in;
+                background-color: v.$color-black;
+
+                p {
+                  color: v.$color-red !important;
+                  transform: none !important;
+                  transition: 0.1s ease-in;
+                  text-shadow: none !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

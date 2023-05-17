@@ -191,6 +191,43 @@
   }
 }
 
+//******** Breakpoint - lg 992px ********//
+
+@media only screen and (min-width: v.$breakpoint-lg) {
+  .skills-container {
+    width: v.$desktop-m-width !important;
+    transition: 1s ease-in-out;
+
+    .skills-bars-wrapper {
+      display: flex;
+      gap: v.$component-gap;
+    }
+    .skills-bar-container {
+      min-width: v.$mobile-sm-width !important;
+      transition: 1s ease-in-out;
+    }
+  }
+
+  //Language Skills Container
+  .lang-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: 1s ease-in-out;
+
+    .lang-skills-title {
+      margin: 0 !important;
+      margin-bottom: 2rem !important;
+      transition: 1s ease-in-out;
+
+      &::after {
+        right: 185px !important;
+        transition: 1s ease-in-out;
+      }
+    }
+  }
+}
+
 //
 //Keyframes
 

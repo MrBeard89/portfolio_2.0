@@ -170,4 +170,64 @@
     padding-bottom: 2rem !important;
     transition: 1s ease-in-out;
   }
+}
+@media only screen and (min-width: 992px) {
+  .projects-container {
+    width: 940px !important;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project-img-container .vector {
+    width: 730px !important;
+  }
+  .projects-container .project-img-container .card-img {
+    width: 540px !important;
+    left: 205px !important;
+    top: 40px !important;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project .project-info-wrapper {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    transition: 1s ease-in-out;
+  }
+  .projects-container .project .project-info-wrapper .links-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem !important;
+    margin-top: 4rem;
+  }
+  .projects-container .project .project-info-wrapper .links-container .project-link button {
+    width: 220px !important;
+    padding: 15px !important;
+    border-radius: 2px !important;
+    box-shadow: none !important;
+  }
+  .projects-container .project .project-info-wrapper .links-container .project-link button:is(:hover, :focus-visible, :active) {
+    transform: none !important;
+    transition: 0.1s ease-in;
+    background-color: #000000;
+  }
+  .projects-container .project .project-info-wrapper .links-container .project-link button:is(:hover, :focus-visible, :active) p {
+    color: #fc4445 !important;
+    transform: none !important;
+    transition: 0.1s ease-in;
+    text-shadow: none !important;
+  }
+  .projects-container .project .project-info-wrapper .links-container .live-link button {
+    width: 220px !important;
+    padding: 15px !important;
+    border-radius: 2px !important;
+    box-shadow: none !important;
+  }
+  .projects-container .project .project-info-wrapper .links-container .live-link button:is(:hover, :focus-visible, :active) {
+    transform: none !important;
+    transition: 0.1s ease-in;
+    background-color: #000000;
+  }
+  .projects-container .project .project-info-wrapper .links-container .live-link button:is(:hover, :focus-visible, :active) p {
+    color: #fc4445 !important;
+    transform: none !important;
+    transition: 0.1s ease-in;
+    text-shadow: none !important;
+  }
 }/*# sourceMappingURL=Projects.css.map */
