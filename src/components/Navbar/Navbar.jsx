@@ -1,12 +1,19 @@
 import React, { useState } from 'react'
+
+//Imported Scss
 import '../../styles/Navbar/Navbar.scss'
+//Imported Logo
 import Logo from '../../assets/logo/beard.png'
+//Imported Hashlink
 import { HashLink } from 'react-router-hash-link'
+
+//React icons imports
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { IoMdArrowDropleft, IoMdArrowDropright } from 'react-icons/io'
 
 export const Navbar = () => {
+  //Usestate for navbar open,close
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   //Automatic hide when scrolling down
@@ -24,7 +31,10 @@ export const Navbar = () => {
 
   return (
     <div className='navbar-wrapper '>
+      {/*  Main container */}
+
       <div className='navbar-container'>
+        {/* Logo container */}
         <HashLink smooth to='#hero'>
           <div className='logo-container'>
             <img className='logo' src={Logo} alt='website logo' />
@@ -32,6 +42,7 @@ export const Navbar = () => {
           </div>
         </HashLink>
 
+        {/* Mobile icon container */}
         <span className='mobile-icon-container' onClick={() => setNavbarOpen((prev) => !prev)}>
           {navbarOpen ? (
             <AiOutlineClose className='close' />
@@ -43,7 +54,11 @@ export const Navbar = () => {
         <div className={`${navbarOpen ? 'navbar-mobile' : 'navlinks-container'}`}>
           <IoMdArrowDropleft className='decor-arrow' />
 
+          {/* Navbar links container */}
+
           <ul className='navlinks' onClick={() => setNavbarOpen(false)}>
+            {/* About link */}
+
             <HashLink smooth to='#about'>
               <span className='link-container'>
                 <li className='navlink'>
@@ -52,6 +67,8 @@ export const Navbar = () => {
                 </li>
               </span>
             </HashLink>
+
+            {/* Skills link */}
 
             <HashLink smooth to='#skills'>
               <span className='link-container'>
@@ -62,6 +79,8 @@ export const Navbar = () => {
               </span>
             </HashLink>
 
+            {/* Projects link */}
+
             <HashLink smooth to='#projects'>
               <span className='link-container'>
                 <li className='navlink'>
@@ -70,6 +89,8 @@ export const Navbar = () => {
                 </li>
               </span>
             </HashLink>
+
+            {/* Contact link */}
 
             <HashLink smooth to='#contact'>
               <span className='link-container'>

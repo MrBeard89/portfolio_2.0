@@ -1,6 +1,8 @@
 @forward '../../sass/templates';
 @use '../../sass/variables' as v;
 
+//Main wrapper
+
 .navbar-wrapper {
   font-family: v.$font-family-kanit;
   max-width: 100%;
@@ -8,6 +10,8 @@
   top: 0;
   z-index: 4;
   transition: top 0.3s;
+
+  //Navbar container
 
   .navbar-container {
     position: relative;
@@ -17,12 +21,15 @@
     width: 100vw;
     background-color: v.$color-white-cyan;
 
+    //Logo container
+
     .logo-container {
       display: flex;
       position: absolute;
       top: 12px;
       left: 20px;
 
+      //logo image
       .logo {
         width: 35px;
         border-radius: 50%;
@@ -33,6 +40,8 @@
           border: 1px solid v.$color-moderate-cyan;
         }
       }
+
+      //Logo name text
 
       .logo-name {
         font-size: v.$fs-m;
@@ -57,7 +66,7 @@
       }
     }
 
-    //Desktop menu
+    //Desktop menu - only shows at desktop screens
 
     .navlinks-container {
       display: none;
@@ -98,7 +107,7 @@
   }
 }
 
-//Mobile Menu
+//Mobile Menu - only shows at mobile screens
 
 .navbar-mobile {
   z-index: 2;
@@ -107,6 +116,8 @@
   height: fit-content;
   width: 100%;
   animation: mobilemenu 1s;
+
+  //Navlinks container
 
   .navlinks {
     z-index: inherit;
@@ -121,6 +132,8 @@
       position: relative;
       text-decoration: none;
       color: v.$color-white-cyan;
+
+      //Links
 
       .navlink {
         display: flex;
@@ -149,6 +162,8 @@
           }
         }
 
+        //When hover, display the triangle,default opacity: 0;
+
         .hover-arrow {
           opacity: 0;
           position: absolute;
@@ -160,6 +175,8 @@
       }
     }
   }
+
+  //Decor arrow left when menu is sliding
 
   .decor-arrow {
     z-index: -1;
