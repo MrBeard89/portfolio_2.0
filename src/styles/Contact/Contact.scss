@@ -1,6 +1,8 @@
 @use '../../sass/variables' as v;
 @forward '../../sass/templates';
 
+//Main wrapper
+
 .contact-wrapper {
   display: flex;
   flex-direction: column;
@@ -13,6 +15,8 @@
   background-repeat: repeat;
   background-size: cover;
 
+  //Contact container
+
   .contact-container {
     display: flex;
     flex-direction: column;
@@ -22,16 +26,22 @@
     width: v.$mobile-s-width;
     padding-top: 5rem;
 
+    //Title
+
     .contact-title {
       @extend %title-style;
       width: 156px;
       text-align: center;
     }
 
+    //Small text at top
+
     .contact-text {
       text-align: center;
       width: 280px;
     }
+
+    //Main container for form
 
     .contact-form-container {
       display: flex;
@@ -41,6 +51,8 @@
       background-color: v.$color-white-cyan;
       border-radius: 1rem;
 
+      //Actual form
+
       .contact-form {
         display: flex;
         flex-direction: column;
@@ -48,10 +60,14 @@
         width: 240px;
         padding: 15px 0px 15px 0px;
 
+        //Form field for each input
+
         .contact-form-field {
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
+
+          //Label
 
           .contact-form-label {
             font-size: v.$fs-m;
@@ -69,7 +85,7 @@
             border-radius: 1rem;
             outline: none;
 
-            //Validation
+            //***************** Validation - name *****************//
 
             &:not(:focus) + span::after {
               position: absolute;
@@ -118,7 +134,7 @@
             border-radius: 1rem;
             outline: none;
 
-            //Validation
+            //***************** Validation - email *****************//
 
             &:not(:focus) + span::after {
               position: absolute;
@@ -170,7 +186,7 @@
             resize: none;
             border: 2px solid transparent;
 
-            //Validation
+            //***************** Validation - textarea *****************//
 
             &:not(:focus) + span::after {
               position: absolute;
@@ -208,6 +224,8 @@
             }
           }
         }
+
+        //Submit button
 
         .btn-submit {
           margin-top: 2rem;
