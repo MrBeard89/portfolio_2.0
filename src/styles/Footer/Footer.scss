@@ -1,6 +1,7 @@
 @use '../../sass/variables' as v;
 @forward '../../sass/templates';
 
+//Main wrapper
 .footer-wrapper {
   display: flex;
   flex-direction: column;
@@ -9,6 +10,8 @@
   font-family: v.$font-family-comfortaa;
   background-color: v.$color-black;
   color: v.$color-white-cyan;
+
+  //Footer container
 
   .footer-container {
     display: flex;
@@ -24,11 +27,14 @@
       flex-direction: column;
       align-items: center;
 
+      //title
       .social-title {
         @extend %title-style;
         width: 156px;
         text-align: center;
       }
+
+      //Social icons container
 
       .social-icons-container {
         display: flex;
@@ -36,10 +42,12 @@
         gap: 2rem;
         margin-top: 1rem;
 
+        //link
         a {
           color: v.$color-white-cyan;
         }
 
+        //Each icon
         .social-icon {
           font-size: v.$fs-h2;
 
@@ -57,12 +65,15 @@
       }
     }
 
+    //Copyright container
+
     .copyright-container {
       margin-bottom: 1rem;
       .copy {
         color: v.$color-moderate-cyan;
-        font-size: v.$fs-s;
+        font-size: v.$fs-xs;
 
+        //Name link
         .footer-copy-link {
           a {
             color: v.$color-soft-blue;
