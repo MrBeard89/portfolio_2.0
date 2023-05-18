@@ -12,7 +12,7 @@
   justify-content: space-between;
   height: 4rem;
   width: 100vw;
-  background-color: #ffffff;
+  background-color: rgba(54, 54, 54, 0.5607843137);
 }
 .navbar-wrapper .navbar-container .logo-container {
   display: flex;
@@ -58,7 +58,6 @@
   right: 25px;
   top: 18px;
   font-size: 24px;
-  color: #000000;
 }
 .navbar-wrapper .navbar-container .hamburger:is(:hover, :focus-visible, :active) {
   cursor: pointer;
@@ -70,7 +69,6 @@
   right: 25px;
   top: 18px;
   font-size: 24px;
-  color: #55bcc9;
 }
 .navbar-wrapper .navbar-container .close:is(:hover, :focus-visible) {
   cursor: pointer;
@@ -91,7 +89,7 @@
   position: inherit;
   top: 64px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: rgba(54, 54, 54, 0.5607843137);
 }
 .navbar-mobile .navlinks a {
   position: relative;
@@ -106,7 +104,6 @@
   text-transform: uppercase;
   font-weight: 700;
   height: 4rem;
-  color: #55bcc9;
   padding-right: 1.5rem;
   border-top: 1px solid rgba(192, 192, 192, 0.4509803922);
 }
@@ -135,13 +132,42 @@
   justify-content: center;
   position: relative;
   display: flex;
+  gap: 3rem;
   height: fit-content;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
   border-top: 1px solid rgba(192, 192, 192, 0.4509803922);
 }
+.navbar-mobile .navlinks .toggle-container .theme-toggle {
+  border-radius: 50%;
+  width: 3.2rem;
+  background-color: #55bcc9;
+  border: 2px solid #55bcc9;
+}
+.navbar-mobile .navlinks .toggle-container .theme-toggle:is(:hover, :focus-visible) {
+  cursor: pointer;
+}
+.navbar-mobile .navlinks .toggle-container .theme-toggle #darktheme-icon {
+  font-size: 28px;
+  background-color: transparent;
+  color: #000000;
+}
+.navbar-mobile .navlinks .toggle-container .theme-toggle #darktheme-icon:is(:hover, :focus-visible) {
+  cursor: pointer;
+  color: #ffffff;
+}
+.navbar-mobile .navlinks .toggle-container .theme-toggle #lighttheme-icon {
+  font-size: 28px;
+  background-color: transparent;
+  color: rgba(54, 54, 54, 0.5607843137);
+}
+.navbar-mobile .navlinks .toggle-container .theme-toggle #lighttheme-icon:is(:hover, :focus-visible) {
+  cursor: pointer;
+  color: #ffffff;
+}
 .navbar-mobile .navlinks .toggle-container .flag-toggle {
+  position: relative;
   width: 3rem;
   background-color: transparent;
   border: none;
@@ -149,12 +175,14 @@
 .navbar-mobile .navlinks .toggle-container .flag-toggle:is(:hover, :focus-visible) {
   cursor: pointer;
 }
-.navbar-mobile .navlinks .toggle-container .flag-toggle::after {
+.navbar-mobile .navlinks .toggle-container .flag-toggle::before {
   position: absolute;
+  left: -23px;
   content: "";
-  height: 1rem;
+  height: 3rem;
   width: 2px;
-  background-color: #fc4445;
+  background-color: #55bcc9;
+  box-shadow: 0px 0px 12px 3px #fc4445;
 }
 .navbar-mobile .decor-arrow {
   z-index: -1;
@@ -214,7 +242,7 @@
   }
   .navlinks-container .navlinks a {
     text-decoration: none;
-    color: #55bcc9;
+    color: #ffffff;
     letter-spacing: 2px;
   }
   .navlinks-container .navlinks .navlink {
@@ -234,6 +262,66 @@
     top: 3px;
     font-size: 24px;
     color: #fc4445;
+  }
+  .navlinks-container .toggle-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    gap: 3rem;
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-top: 1px solid rgba(192, 192, 192, 0.4509803922);
+  }
+  .navlinks-container .toggle-container .theme-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    border-radius: 50%;
+    width: 2.2rem;
+    background-color: #55bcc9;
+    border: 2px solid #55bcc9;
+  }
+  .navlinks-container .toggle-container .theme-toggle:is(:hover, :focus-visible) {
+    cursor: pointer;
+  }
+  .navlinks-container .toggle-container .theme-toggle #darktheme-icon {
+    font-size: 28px;
+    background-color: transparent;
+    color: #000000;
+  }
+  .navlinks-container .toggle-container .theme-toggle #darktheme-icon:is(:hover, :focus-visible) {
+    color: rgba(54, 54, 54, 0.5607843137) !important;
+  }
+  .navlinks-container .toggle-container .theme-toggle #lighttheme-icon {
+    font-size: 28px;
+    background-color: transparent;
+    color: #ffffff !important;
+  }
+  .navlinks-container .toggle-container .theme-toggle #lighttheme-icon:is(:hover, :focus-visible) {
+    color: rgba(54, 54, 54, 0.5607843137) !important;
+  }
+  .navlinks-container .toggle-container .flag-toggle {
+    position: relative;
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+  }
+  .navlinks-container .toggle-container .flag-toggle:is(:hover, :focus-visible) {
+    cursor: pointer;
+  }
+  .navlinks-container .toggle-container .flag-toggle::before {
+    position: absolute;
+    left: -23px;
+    content: "";
+    height: 2rem;
+    width: 2px;
+    background-color: #55bcc9;
+    box-shadow: 0px 0px 12px 3px #fc4445;
   }
 }
 @media only screen and (min-width: 1200px) {

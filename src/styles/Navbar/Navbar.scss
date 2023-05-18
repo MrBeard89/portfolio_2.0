@@ -19,7 +19,7 @@
     justify-content: space-between;
     height: 4rem;
     width: 100vw;
-    background-color: v.$color-white-cyan;
+    background-color: v.$color-gray;
 
     //Logo container
 
@@ -84,7 +84,6 @@
       right: 25px;
       top: 18px;
       font-size: v.$fs-xl;
-      color: v.$color-black;
 
       &:is(:hover, :focus-visible, :active) {
         cursor: pointer;
@@ -98,7 +97,6 @@
       right: 25px;
       top: 18px;
       font-size: v.$fs-xl;
-      color: v.$color-moderate-cyan;
 
       &:is(:hover, :focus-visible) {
         cursor: pointer;
@@ -126,7 +124,7 @@
     position: inherit;
     top: 64px;
     width: 100%;
-    background-color: v.$color-white-cyan;
+    background-color: v.$color-gray;
 
     a {
       position: relative;
@@ -143,7 +141,7 @@
         text-transform: uppercase;
         font-weight: v.$comfortaa-weight-700;
         height: 4rem;
-        color: v.$color-moderate-cyan;
+
         padding-right: 1.5rem;
         border-top: 1px solid #c0c0c073;
 
@@ -182,14 +180,50 @@
       justify-content: center;
       position: relative;
       display: flex;
+      gap: 3rem;
       height: fit-content;
       padding-top: 1rem;
       padding-bottom: 1rem;
       width: 100%;
       border-top: 1px solid #c0c0c073;
 
+      //Toggle theme buttons
+      .theme-toggle {
+        border-radius: 50%;
+        width: 3.2rem;
+        background-color: v.$color-moderate-cyan;
+        border: 2px solid v.$color-moderate-cyan;
+
+        &:is(:hover, :focus-visible) {
+          cursor: pointer;
+        }
+
+        #darktheme-icon {
+          font-size: v.$fs-xxl;
+          background-color: transparent;
+          color: v.$color-black;
+
+          &:is(:hover, :focus-visible) {
+            cursor: pointer;
+            color: v.$color-white-cyan;
+          }
+        }
+
+        #lighttheme-icon {
+          font-size: v.$fs-xxl;
+          background-color: transparent;
+          color: v.$color-gray;
+
+          &:is(:hover, :focus-visible) {
+            cursor: pointer;
+            color: v.$color-white-cyan;
+          }
+        }
+      }
+
       //Flag icon toggle
       .flag-toggle {
+        position: relative;
         width: 3rem;
         background-color: transparent;
         border: none;
@@ -198,12 +232,14 @@
           cursor: pointer;
         }
 
-        &::after {
+        &::before {
           position: absolute;
+          left: -23px;
           content: '';
-          height: 1rem;
+          height: 3rem;
           width: 2px;
-          background-color: v.$color-red;
+          background-color: v.$color-moderate-cyan;
+          box-shadow: 0px 0px 12px 3px v.$color-red;
         }
       }
     }
@@ -287,7 +323,7 @@
 
       a {
         text-decoration: none;
-        color: v.$color-moderate-cyan;
+        color: v.$color-white-cyan;
         letter-spacing: 2px;
       }
 
@@ -310,6 +346,80 @@
           top: 3px;
           font-size: v.$fs-xl;
           color: v.$color-red;
+        }
+      }
+    }
+
+    //Toggle container - Language ,Theme
+
+    .toggle-container {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      display: flex;
+      gap: 3rem;
+      height: fit-content;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 100%;
+      border-top: 1px solid #c0c0c073;
+
+      //Toggle theme buttons
+      .theme-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2px;
+        padding-left: 2px;
+        border-radius: 50%;
+        width: 2.2rem;
+        background-color: v.$color-moderate-cyan;
+        border: 2px solid v.$color-moderate-cyan;
+
+        &:is(:hover, :focus-visible) {
+          cursor: pointer;
+        }
+
+        #darktheme-icon {
+          font-size: v.$fs-xxl;
+          background-color: transparent;
+          color: v.$color-black;
+
+          &:is(:hover, :focus-visible) {
+            color: v.$color-gray !important;
+          }
+        }
+
+        #lighttheme-icon {
+          font-size: v.$fs-xxl;
+          background-color: transparent;
+          color: v.$color-white-cyan !important;
+
+          &:is(:hover, :focus-visible) {
+            color: v.$color-gray !important;
+          }
+        }
+      }
+
+      //Flag icon toggle
+      .flag-toggle {
+        position: relative;
+        width: 2rem;
+        background-color: transparent;
+        border: none;
+
+        &:is(:hover, :focus-visible) {
+          cursor: pointer;
+        }
+
+        &::before {
+          position: absolute;
+          left: -23px;
+          content: '';
+          height: 2rem;
+          width: 2px;
+          background-color: v.$color-moderate-cyan;
+          box-shadow: 0px 0px 12px 3px v.$color-red;
         }
       }
     }

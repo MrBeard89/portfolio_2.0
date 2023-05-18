@@ -28,7 +28,7 @@
   background-color: #fc4445;
   font-size: 28px;
   margin-bottom: 2rem;
-  box-shadow: 0px 15px 35px 3px #55bcc9;
+  box-shadow: 0px 15px 25px 2px #000000;
 }
 .contact-wrapper .contact-container .contact-form-container .contact-form .submit-btn-container .btn-submit:is(:hover, :focus-visible, :active) {
   cursor: pointer;
@@ -45,9 +45,6 @@
   width: 100%;
   font-family: "Comfortaa", cursive;
   padding-bottom: 5rem;
-  background-image: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url("https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg");
-  background-repeat: repeat;
-  background-size: cover;
 }
 .contact-wrapper .contact-container {
   display: flex;
@@ -71,7 +68,7 @@
   flex-direction: column;
   align-items: center;
   width: 280px;
-  background-color: #ffffff;
+  background-color: rgba(54, 54, 54, 0.5607843137);
   border-radius: 1rem;
 }
 .contact-wrapper .contact-container .contact-form-container .contact-form {

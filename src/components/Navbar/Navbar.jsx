@@ -14,15 +14,29 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { IoMdArrowDropleft, IoMdArrowDropright } from 'react-icons/io'
 import { BsSunFill, BsMoonFill } from 'react-icons/bs'
 
+//Context
 import { LanguageContext } from '../../context/LanguageContext'
+import { Themecontext } from '../../context/Themecontext'
 
 //Import Language Library
 const i18n = require('../../utils/i18n')
 
 export const Navbar = () => {
+  //Context
+  const { theme, toggleTheme } = useContext(Themecontext)
   const { language, toggleLanguage } = useContext(LanguageContext)
+
   //Usestate for navbar open,close
   const [navbarOpen, setNavbarOpen] = useState(false)
+
+  //Theme icon state
+
+  const [themeIcon, setThemeIcon] = useState(theme)
+
+  //Toggle theme icon
+  const toggleIcon = () => {
+    themeIcon === 'light' ? setThemeIcon('dark') : setThemeIcon('light')
+  }
 
   //Automatic hide when scrolling down
 
@@ -38,7 +52,7 @@ export const Navbar = () => {
   }
 
   return (
-    <div className='navbar-wrapper '>
+    <div className={`navbar-wrapper ${theme === 'light' ? 'light' : 'dark'}`}>
       {/*  Main container */}
 
       <div className='navbar-container'>
@@ -110,6 +124,20 @@ export const Navbar = () => {
             </HashLink>
 
             <div className='toggle-container'>
+              <button
+                className='theme-toggle'
+                onClick={() => {
+                  toggleIcon()
+                  toggleTheme()
+                }}
+              >
+                {themeIcon === 'dark' ? (
+                  <BsMoonFill id='darktheme-icon' />
+                ) : (
+                  <BsSunFill id='lighttheme-icon' />
+                )}
+              </button>
+
               <button className='flag-toggle' onClick={toggleLanguage}>
                 {language === 'hu' ? (
                   <svg

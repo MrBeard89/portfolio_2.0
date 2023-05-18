@@ -49,6 +49,7 @@
         //Vector laptop
 
         .vector {
+          z-index: 2;
           width: v.$mobile-s-width;
         }
 
@@ -63,7 +64,7 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        background-color: v.$color-white-cyan;
+        background-color: v.$color-gray;
         box-shadow: 0px 0px 12px 2px v.$color-moderate-cyan;
         border-radius: 0.8rem;
         padding: 10px 5px 10px 5px;
@@ -325,6 +326,7 @@
       transition: 1s ease-in-out;
 
       .project-info-wrapper {
+        z-index: 1;
         padding: 1rem !important;
         transition: 1s ease-in-out;
         width: v.$mobile-m-width;
@@ -342,7 +344,7 @@
       }
 
       &::after {
-        z-index: -2;
+        z-index: 0;
         position: absolute;
         bottom: 150px;
         content: '';

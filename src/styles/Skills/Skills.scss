@@ -40,7 +40,7 @@
     //Progress bar section main container
 
     .skills-bar-container {
-      background-color: v.$color-white-cyan;
+      background-color: v.$color-gray;
       box-shadow: 0px 0px 12px 2px v.$color-moderate-cyan;
       border-radius: 0.8rem;
       padding-top: 10px;
@@ -60,7 +60,6 @@
         .progressbar-title {
           h3 {
             display: inline-block;
-            color: v.$color-soft-black;
           }
           .percent {
             position: absolute;

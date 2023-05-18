@@ -9,7 +9,6 @@
   align-items: center;
   font-family: v.$font-family-comfortaa;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(245, 245, 245, 0.8));
 
   //About container
 
@@ -34,7 +33,6 @@
       .about-info {
         text-align: center;
         font-size: v.$fs-m;
-        color: v.$color-soft-black;
         font-weight: v.$comfortaa-weight-500;
         margin-bottom: 4rem;
         line-height: 1.6rem;

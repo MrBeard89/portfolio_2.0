@@ -1,5 +1,18 @@
+@use '../src/sass/variables' as v;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+//Theme Colors
+.dark {
+  background-color: v.$dark-theme-color;
+  color: v.$color-white-cyan;
+}
+
+.light {
+  background-color: v.$color-white-cyan;
+  color: v.$dark-theme-color;
 }

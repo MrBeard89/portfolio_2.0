@@ -1,27 +1,41 @@
 import './App.scss'
-import { Navbar } from './components/Navbar/Navbar'
-import { Home } from './pages/Home'
+import { useState, useEffect } from 'react'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import { LanguageContext, LanguageContextDefaults } from './context/LanguageContext'
-import { useState } from 'react'
+import { Themecontext } from './context/Themecontext'
+
+import { Navbar } from './components/Navbar/Navbar'
+import { Home } from './pages/Home'
+
 function App() {
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
   const [language, setLanguage] = useState(LanguageContextDefaults.value)
 
+  const toggleTheme = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light')
+  }
   const toggleLanguage = () => {
     language === 'hu' ? setLanguage('en') : setLanguage('hu')
   }
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
   return (
     <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage }}>
-      <div className='App'>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/home' element={<Home />} />
-          </Routes>
-        </Router>
+      <div className={`App ${theme}`}>
+        <Themecontext.Provider value={{ theme, setTheme, localStorage, toggleTheme }}>
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/home' element={<Home />} />
+            </Routes>
+          </Router>
+        </Themecontext.Provider>
       </div>
     </LanguageContext.Provider>
   )
