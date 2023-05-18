@@ -28,7 +28,7 @@ function App() {
     <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage }}>
       <div className={`App ${theme}`}>
         <Themecontext.Provider value={{ theme, setTheme, localStorage, toggleTheme }}>
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
             <Navbar />
             <Routes>
               <Route path='/' element={<Home />} />
