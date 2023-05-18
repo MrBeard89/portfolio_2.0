@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio_2.0/static/css/main.04a94724.css",
+    "main.js": "/portfolio_2.0/static/js/main.c9f8ebb6.js",
+    "static/media/dragonball-desktop.png": "/portfolio_2.0/static/media/dragonball-desktop.675def12b782426fe5cc.png",
+    "static/media/sufnigsm-desktop.png": "/portfolio_2.0/static/media/sufnigsm-desktop.4320f4e2b5c9908401ac.png",
+    "static/media/insure-desktop.png": "/portfolio_2.0/static/media/insure-desktop.7da98d9aebc5c989cb12.png",
+    "static/media/en.jpg": "/portfolio_2.0/static/media/en.71cf4a86bac68b3bcec2.jpg",
+    "static/media/url-shortening-desktop.png": "/portfolio_2.0/static/media/url-shortening-desktop.742edfdca20c8f8eac5b.png",
+    "static/media/todoapp-desktop.png": "/portfolio_2.0/static/media/todoapp-desktop.7ef876056809d8d24c72.png",
+    "static/media/laptopvector.png": "/portfolio_2.0/static/media/laptopvector.fb671cfea8a3baa49942.png",
+    "static/media/beard.png": "/portfolio_2.0/static/media/beard.a1c20c777daa7c390154.png",
+    "index.html": "/portfolio_2.0/index.html",
+    "main.04a94724.css.map": "/portfolio_2.0/static/css/main.04a94724.css.map",
+    "main.c9f8ebb6.js.map": "/portfolio_2.0/static/js/main.c9f8ebb6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04a94724.css",
+    "static/js/main.c9f8ebb6.js"
+  ]
+}
