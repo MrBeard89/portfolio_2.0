@@ -14,6 +14,27 @@
   "hero_text_end": "hero_text_end",
   "hero_btn": "hero_btn",
 
+  "about_title": "about_title",
+  "about_info": "about_info",
+  "about_text_title": "about_text_title",
+  "about_text_start_1": "about_text_start_1",
+  "about_dev_highlight": "about_dev_highlight",
+  "about_after_dev": "about_after_dev",
+  "about_text_highlight_projects": "about_text_highlight_projects",
+  "about_text_highlight_projects_after": "about_text_highlight_projects_after",
+
+  "about_text_start_2": "about_text_start_2",
+  "about_web_development": "about_web_development",
+  "about_text_end_2": "about_text_end_2",
+  "about_text_after_linkedin": "about_text_after_linkedin",
+
+  "about_text_start_3": "about_text_start_3",
+  "about_job": "about_job",
+  "about_after_job": "about_after_job",
+  "about_text_contact_me": "about_text_contact_me",
+
+  "about_btn": "about_btn",
+
   "skills_title": "skills_title",
   "skills_text_1": "skills_text_1",
   "skills_text_2": "skills_text_2",
@@ -25,17 +46,29 @@
   "skills_photoshop": "skills_photoshop",
   "skills_msoffice": "skills_msoffice",
   "skills_text_5": "skills_text_5",
+  "skills_lang_title": "skills_lang_title",
+  "skills_lang": "skills_lang",
+  "skills_lang_writing": "skills_lang_writing",
+  "skills_lang_understand": "skills_lang_understand",
+  "skills_lang_speak": "skills_lang_speak",
 
   "projects_title": "projects_title",
-  "projects_more_btn": "projects_more_btn",
 
   "contact_title": "contact_title",
-  "contact_intro_text": "contact_intro_text",
-  "contact_text_1": "contact_text_1",
-  "contact_text_2": "contact_text_2",
-  "contact_highlighted_text_1": "contact_highlighted_text_1",
-  "contact_highlighted_text_2": "contact_highlighted_text_2",
-  "contact_email_btn": "contact_email_btn",
-  "contact_footer_text": "contact_footer_text",
-  "contact_sign": "contact_sign"
+  "contact_info": "contact_info",
+  "contact_submit": "contact_submit",
+  "contact_input_name": "contact_input_name",
+  "contact_input_email": "contact_input_email",
+  "contact_input_textarea": "contact_input_textarea",
+  "contact_input_name_placeholder": "contact_input_name_placeholder",
+  "contact_input_email_placeholder": "contact_input_email_placeholder",
+  "contact_input_textarea_placeholder": "contact_input_textarea_placeholder",
+  "contact_input_name_after": "contact_input_name_after",
+  "contact_input_email_after": "contact_input_email_after",
+  "contact_input_textarea_after": "contact_input_textarea_after",
+
+  "footer_title": "footer_title",
+  "footer_info": "footer_info",
+  "footer_copyright": "footer_copyright",
+  "footer_name": "footer_name"
 }

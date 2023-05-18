@@ -14,6 +14,27 @@
   "hero_text_end": "building websites and applications ,that leads to a good user experience",
   "hero_btn": "Projects",
 
+  "about_title": "About me",
+  "about_info": "Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology",
+  "about_text_title": "Get to know me!",
+  "about_text_start_1": "I'm a ",
+  "about_dev_highlight": "Frontend Developer",
+  "about_after_dev": " building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the",
+  "about_text_highlight_projects": "Projects",
+  "about_text_highlight_projects_after": "section.",
+
+  "about_text_start_2": "I also like sharing content related to the stuff that I have learned over 1 year in ",
+  "about_web_development": "Web Development",
+  "about_text_end_2": "at Webler Studios so it can help other people of the Dev Community. Feel free to Connect or Follow me on my",
+  "about_text_after_linkedin": "where I post useful content related to Web Development and Programming",
+
+  "about_text_start_3": "I'm open to ",
+  "about_job": "Job",
+  "about_after_job": "opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to",
+  "about_text_contact_me": "contact me.",
+
+  "about_btn": "Contact",
+
   "skills_title": "Skills",
   "skills_text_1": "Web development for me, is passion.I like creating sites, user environments, and overall designing the page, however i'm not a webdesigner.",
   "skills_text_2": "My future plans are, learning ",
@@ -25,19 +46,31 @@
   "skills_photoshop": "Photoshopping",
   "skills_msoffice": "MS Office",
   "skills_text_5": " knowledge , Fast typing.I'm improving myself, and doing projects every day!",
+  "skills_lang_title": "Language Skills",
+  "skills_lang": "English",
+  "skills_lang_writing": "Writing",
+  "skills_lang_understand": "Understanding",
+  "skills_lang_speak": "Speaking",
 
   "projects_title": "Projects",
-  "projects_more_btn": "More projects here",
 
   "contact_title": "Contact",
-  "contact_intro_text": "Get in Touch",
-  "contact_text_1": ", so if you interested about me, and you want me to",
-  "contact_text_2": ", please send me an email !",
-  "contact_highlighted_text_1": "I'm looking for a Frontend job",
-  "contact_highlighted_text_2": "join your team",
-  "contact_email_btn": "Send Email",
-  "contact_footer_text": "Designed & built by ",
-  "contact_sign": "Norbert Kovács",
+  "contact_info": "Feel free to Contact me by submitting the form below and I will get back to you as soon as possible",
+  "contact_submit": "Submit",
+  "contact_input_name": "Name",
+  "contact_input_email": "Email",
+  "contact_input_textarea": "Message",
+  "contact_input_name_placeholder": "Enter Your Name",
+  "contact_input_email_placeholder": "Enter Your Email",
+  "contact_input_textarea_placeholder": "Enter Your Message",
+  "contact_input_name_after": "Please write a valid name",
+  "contact_input_email_after": "Please write a valid email",
+  "contact_input_textarea_after": "Please write a message",
+
+  "footer_title": "Social",
+  "footer_info": "If my code catched your interest, feel free to contact me on social platforms or via email",
+  "footer_copyright": "Copyright 2023.Made by",
+  "footer_name": "Norbert Kovacs",
 
   "projects": [
     {
@@ -45,11 +78,11 @@
       "title": "Insure Landing Page",
       "description": "This project is based on Frontend mentors design.This was my first project that i used ReactJs and Sass preprocessor.The design was challenging and learned a lot from it.",
       "note": "This Project was created to match the resolution for 375px and 1440px.",
-      "tech": "HTML, CSS, SCSS, ReactJs, React Router, Hash Link, Boxicon Icons",
+      "tech": ["HTML", "CSS", "SCSS", "ReactJs", "React Router", " Hash Link", "Boxicon Icons"],
       "projectlink": "https://github.com/MrBeard89/insure-landing-page-react",
       "livelink": "https://mrbeard89.github.io/insure-landing-page-react/",
-      "imglinkmobile": "insure-mobile.png",
-      "imglinkdesktop": "insure-desktop.png"
+      "imglinkvector": "laptopvector.png",
+      "imglink": "insure-desktop.png"
     },
 
     {
@@ -57,11 +90,11 @@
       "title": "Dragon Ball Fanpage",
       "description": "This project was my module final test at my school for SCSS.The rules was simple , write an SPA with your favorite brand. Well i really like dragonball, and I choose that.",
       "note": "This Project is responsive on all screen sizes",
-      "tech": "HTML, CSS, SCSS, ReactJs, React Router,Link, ",
+      "tech": ["HTML", "CSS", "SCSS", "ReactJs", "React Router", "Link"],
       "projectlink": "https://github.com/MrBeard89/dragonball-fanpage",
       "livelink": "https://mrbeard89.github.io/dragonball-fanpage/",
-      "imglinkmobile": "dragonball-mobile.png",
-      "imglinkdesktop": "dragonball-desktop.png"
+      "imglinkvector": "laptopvector.png",
+      "imglink": "dragonball-desktop.png"
     },
 
     {
@@ -69,11 +102,11 @@
       "title": "Todo App with React",
       "description": "This is a Todo app with React.You can add Todo, select Todo, you can delete Todo",
       "note": "I created this project to be responsive overall all screens",
-      "tech": "HTML5, CSS3, Bootstrap5, React",
+      "tech": ["HTML5", "CSS3", "Bootstrap5", "React"],
       "projectlink": "https://github.com/MrBeard89/todoapp-react",
       "livelink": "https://mrbeard89.github.io/todoapp-react/",
-      "imglinkmobile": "react-todo-mobile.png",
-      "imglinkdesktop": "todoapp-desktop.png"
+      "imglinkvector": "laptopvector.png",
+      "imglink": "todoapp-desktop.png"
     },
 
     {
@@ -81,11 +114,11 @@
       "title": "Url Shortening Api with React",
       "description": "This Project uses an Api , that shorts all url that is inserted in the input field,and displays the original and the shortened link.You can copy itt to the Clipborad with one button click !",
       "note": "This Project was created to match the resolution for 375px and 1440px.",
-      "tech": "React, React Router, Scss, CopytoClipboard library, Axios to API call",
+      "tech": ["React", "React Router", "Scss", "CopytoClipboard library", "Axios to API call"],
       "projectlink": "https://github.com/MrBeard89/url-shortening-api-react",
       "livelink": "https://mrbeard89.github.io/url-shortening-api-react/",
-      "imglinkmobile": "url-shortening-mobile.png",
-      "imglinkdesktop": "url-shortening-desktop.png"
+      "imglinkvector": "laptopvector.png",
+      "imglink": "url-shortening-desktop.png"
     },
 
     {
@@ -93,11 +126,11 @@
       "title": "Sufni Gsm with Context Api",
       "description": "This Project uses an Api call, for data from different currency , you can select your phone , and take that data to the Calculation page where you can calculate the price , depending on the phones.json data. For this i use Context API.",
       "note": "Responsive, mobile screen optimalization is currently in progress",
-      "tech": "React, React Router, Css, React - Context API, Axios to API call",
+      "tech": ["React", "React Router", " Css", "React - Context API", "Axios to API call"],
       "projectlink": "https://github.com/MrBeard89/sufni_gsm",
       "livelink": "https://mrbeard89.github.io/sufni_gsm/",
-      "imglinkmobile": "sufnigsm.png",
-      "imglinkdesktop": "sufnigsm-desktop.png"
+      "imglinkvector": "laptopvector.png",
+      "imglink": "sufnigsm-desktop.png"
     }
   ]
 }

@@ -88,14 +88,34 @@
 
             //***************** Validation - name *****************//
 
-            &:not(:focus) + span::after {
+            //- hu placeholder
+
+            &:not(:focus) + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Kérem irjon egy érvényes nevet';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Érvényes név';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            //- en placeholder
+
+            &:not(:focus) + .en::after {
               position: absolute;
               left: 10px;
               content: 'Please write a valid name';
               font-size: v.$fs-xs;
             }
 
-            &:valid + span::after {
+            &:valid + .en::after {
               position: absolute;
               left: 10px;
               content: 'Valid name';
@@ -103,6 +123,8 @@
               color: green;
               transition: 0.3s ease;
             }
+
+            //Border - color
 
             &:valid {
               border: 2px solid green;
@@ -137,14 +159,34 @@
 
             //***************** Validation - email *****************//
 
-            &:not(:focus) + span::after {
+            //- hu placeholder
+
+            &:not(:focus) + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Kérem irjon egy érvényes email cimet';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Érvényes email';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            //- en placeholder
+
+            &:not(:focus) + .en::after {
               position: absolute;
               left: 10px;
               content: 'Please write a valid email';
               font-size: v.$fs-xs;
             }
 
-            &:valid + span::after {
+            &:valid + .en::after {
               position: absolute;
               left: 10px;
               content: 'Valid email';
@@ -152,6 +194,8 @@
               color: green;
               transition: 0.3s ease;
             }
+
+            //Border - color
 
             &:valid {
               border: 2px solid green;
@@ -188,14 +232,34 @@
 
             //***************** Validation - textarea *****************//
 
-            &:not(:focus) + span::after {
+            //- hu placeholder
+
+            &:not(:focus) + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Kérem irjon egy üzenetett';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Érvényes üzenet';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            //- en placeholder
+
+            &:not(:focus) + .en::after {
               position: absolute;
               left: 10px;
               content: 'Please write a message';
               font-size: v.$fs-xs;
             }
 
-            &:valid + span::after {
+            &:valid + .en::after {
               position: absolute;
               left: 10px;
               content: 'Valid message';
@@ -203,6 +267,8 @@
               color: green;
               transition: 0.3s ease;
             }
+
+            //Border - color
 
             &:valid {
               border: 2px solid green;

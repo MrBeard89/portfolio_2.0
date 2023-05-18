@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .contact-wrapper .contact-container .contact-title {
   position: relative;
   font-family: "Kanit", sans-serif;
@@ -100,13 +101,27 @@
   border-radius: 1rem;
   outline: none;
 }
-.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:not(:focus) + span::after {
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:not(:focus) + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Kérem irjon egy érvényes nevet";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:valid + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Érvényes név";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:not(:focus) + .en::after {
   position: absolute;
   left: 10px;
   content: "Please write a valid name";
   font-size: 12px;
 }
-.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:valid + span::after {
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:valid + .en::after {
   position: absolute;
   left: 10px;
   content: "Valid name";
@@ -139,13 +154,27 @@
   border-radius: 1rem;
   outline: none;
 }
-.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:not(:focus) + span::after {
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:not(:focus) + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Kérem irjon egy érvényes email cimet";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:valid + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Érvényes email";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:not(:focus) + .en::after {
   position: absolute;
   left: 10px;
   content: "Please write a valid email";
   font-size: 12px;
 }
-.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:valid + span::after {
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:valid + .en::after {
   position: absolute;
   left: 10px;
   content: "Valid email";
@@ -180,13 +209,27 @@
   resize: none;
   border: 2px solid transparent;
 }
-.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:not(:focus) + span::after {
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:not(:focus) + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Kérem irjon egy üzenetett";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:valid + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Érvényes üzenet";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:not(:focus) + .en::after {
   position: absolute;
   left: 10px;
   content: "Please write a message";
   font-size: 12px;
 }
-.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:valid + span::after {
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:valid + .en::after {
   position: absolute;
   left: 10px;
   content: "Valid message";

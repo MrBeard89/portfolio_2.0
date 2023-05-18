@@ -1,6 +1,12 @@
 import '../../styles/Skills/Skills.scss'
+import { useContext } from 'react'
+import { LanguageContext } from '../../context/LanguageContext'
+
+//Import Language Library
+const i18n = require('../../utils/i18n')
 
 export const Skills = () => {
+  const { language } = useContext(LanguageContext)
   return (
     <div className='skills-wrapper' id='skills'>
       {/* Main container */}
@@ -10,19 +16,26 @@ export const Skills = () => {
 
         <div className='skills-text-container'>
           {/* Title */}
-          <h1 className='skills-title'>Skills</h1>
+          <h1 className='skills-title'>{i18n.text(language, i18n.MAP.skills_title)}</h1>
 
           {/*Text container  */}
           {/* highlighted-text - represents the bold red text */}
 
           <p className='skills-text'>
-            Web development for me, is passion.I like{' '}
-            <span className='highlighted-text'>creating</span> sites, user environments, and overall{' '}
-            <span className='highlighted-text'>designing</span> the page, however i'm not a
-            webdesigner. My future plans are, learning Python , and assign somewhere to be a{' '}
-            <span className='highlighted-text'>Webdesigner</span> also. Little{' '}
-            <span className='highlighted-text'>Photoshopping ,MS Office</span> knowledge , Fast
-            typing.I'm improving myself, and doing projects every day!
+            {i18n.text(language, i18n.MAP.skills_text_1)}
+            {i18n.text(language, i18n.MAP.skills_text_2)}{' '}
+            <span className='highlighted-text'>{i18n.text(language, i18n.MAP.skills_python)}</span>
+            {i18n.text(language, i18n.MAP.skills_text_3)}
+            <span className='highlighted-text'>
+              {i18n.text(language, i18n.MAP.skills_webdesigner)}
+            </span>
+            {i18n.text(language, i18n.MAP.skills_text_4)}
+            {i18n.text(language, i18n.MAP.skills_little)}{' '}
+            <span className='highlighted-text'>
+              {i18n.text(language, i18n.MAP.skills_photoshop)}{' '}
+              {i18n.text(language, i18n.MAP.skills_msoffice)}
+            </span>{' '}
+            {i18n.text(language, i18n.MAP.skills_text_5)}
           </p>
         </div>
 
@@ -138,14 +151,14 @@ export const Skills = () => {
           {/*Language Skills section*/}
 
           <div className='lang-skills'>
-            <h3 className='lang-skills-title'>Language Skills</h3>
-            <p>English</p>
+            <h3 className='lang-skills-title'>{i18n.text(language, i18n.MAP.skills_lang_title)}</h3>
+            <p>{i18n.text(language, i18n.MAP.skills_lang)}</p>
             <ul className='skills-bar-container'>
               {/* Writing progress bar*/}
 
               <li>
                 <div className='progressbar-title'>
-                  <h3>Writing</h3>
+                  <h3>{i18n.text(language, i18n.MAP.skills_lang_writing)}</h3>
                   <span className='percent' id='writing-pourcent'></span>
                 </div>
                 {/* Bar container */}
@@ -158,7 +171,7 @@ export const Skills = () => {
 
               <li>
                 <div className='progressbar-title'>
-                  <h3>Understanding</h3>
+                  <h3>{i18n.text(language, i18n.MAP.skills_lang_understand)}</h3>
                   <span className='percent' id='understanding-pourcent'></span>
                 </div>
                 {/* Bar container */}
@@ -171,7 +184,7 @@ export const Skills = () => {
 
               <li>
                 <div className='progressbar-title'>
-                  <h3>Speaking</h3>
+                  <h3>{i18n.text(language, i18n.MAP.skills_lang_speak)}</h3>
                   <span className='percent' id='speaking-pourcent'></span>
                 </div>
                 {/* Bar container */}

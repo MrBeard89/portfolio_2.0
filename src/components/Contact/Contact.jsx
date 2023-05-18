@@ -1,6 +1,11 @@
 import '../../styles/Contact/Contact.scss'
+import { useContext } from 'react'
+import { LanguageContext } from '../../context/LanguageContext'
 
+//import library
+const i18n = require('../../utils/i18n')
 export const Contact = () => {
+  const { language } = useContext(LanguageContext)
   return (
     <div className='contact-wrapper' id='contact'>
       {/*  Main container */}
@@ -8,14 +13,11 @@ export const Contact = () => {
       <div className='contact-container'>
         {/* Main title */}
 
-        <h1 className='contact-title'>Contact</h1>
+        <h1 className='contact-title'>{i18n.text(language, i18n.MAP.contact_title)}</h1>
 
         {/*Contact Outro text */}
 
-        <p className='contact-text'>
-          Feel free to Contact me by submitting the form below and I will get back to you as soon as
-          possible{' '}
-        </p>
+        <p className='contact-text'>{i18n.text(language, i18n.MAP.contact_info)} </p>
 
         {/* Main form container */}
 
@@ -29,7 +31,7 @@ export const Contact = () => {
             <div className='contact-form-field'>
               {/* Label for Name */}
               <label className='contact-form-label' htmlFor='name'>
-                Name
+                {i18n.text(language, i18n.MAP.contact_input_name)}
               </label>
 
               {/* Input - Name */}
@@ -38,18 +40,18 @@ export const Contact = () => {
                 className='contact-form-input'
                 type='text'
                 name='name'
-                placeholder='Enter Your Name'
+                placeholder={i18n.text(language, i18n.MAP.contact_input_name_placeholder)}
                 pattern='[a-zA-Z]+'
                 required
               />
-              <span></span>
+              {language === 'hu' ? <span className='hu'></span> : <span className='en'></span>}
             </div>
 
             <div className='contact-form-field'>
               {/* Label for Email */}
 
               <label className='contact-form-label' htmlFor='email'>
-                Email
+                {i18n.text(language, i18n.MAP.contact_input_email)}
               </label>
 
               {/* Input - Email */}
@@ -58,18 +60,18 @@ export const Contact = () => {
                 className='contact-form-email'
                 type='email'
                 name='email'
-                placeholder='Enter Your Email'
+                placeholder={i18n.text(language, i18n.MAP.contact_input_email_placeholder)}
                 required
                 minLength='1'
               />
-              <span></span>
+              {language === 'hu' ? <span className='hu'></span> : <span className='en'></span>}
             </div>
 
             <div className='contact-form-field'>
               {/* Label for Message */}
 
               <label className='contact-form-label' htmlFor='message'>
-                Message
+                {i18n.text(language, i18n.MAP.contact_input_textarea)}
               </label>
 
               {/* Textarea */}
@@ -80,19 +82,19 @@ export const Contact = () => {
                 rows='10'
                 type='text'
                 name='message'
-                placeholder='Enter Your Message'
+                placeholder={i18n.text(language, i18n.MAP.contact_input_textarea_placeholder)}
                 required
                 autoComplete='none'
                 minLength='10'
               />
-              <span></span>
+              {language === 'hu' ? <span className='hu'></span> : <span className='en'></span>}
             </div>
 
             {/* Submit button - no action,no method , just snaps at top of the page */}
 
             <div className='submit-btn-container'>
               <button className='btn-submit' type='submit'>
-                Submit
+                {i18n.text(language, i18n.MAP.contact_submit)}
               </button>
             </div>
           </form>

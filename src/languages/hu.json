@@ -14,30 +14,63 @@
   "hero_text_end": ", aki weboldalakat, webalkalmazásokat épit, ami jó felhasználói élményhez vezet",
   "hero_btn": "Projektek",
 
+  "about_title": "Rólam",
+  "about_info": "Itt információt találsz rólam , amit csinálok, és a jelenlegi készségeimről főként a programozás és technológia területéről",
+  "about_text_title": "Ismerj meg!",
+  "about_text_start_1": "Én egy ",
+  "about_dev_highlight": "Frontend Fejlesztő",
+  "about_after_dev": " vagyok, aki weboldalakat, webalkalmazásokat épit, ami sikerhez juttatja magát a projektet.Nézd meg pár munkámat a ",
+  "about_text_highlight_projects": "Projektek",
+  "about_text_highlight_projects_after": "szekcióban.",
+
+  "about_text_start_2": "Szeretem megosztani azt a tartalmat, amit 1 év alatt, tanultam a  ",
+  "about_web_development": "Web Fejlesztésről",
+  "about_text_end_2": "a Webler Stúdiónál, igy tudok segiteni embereknek a Fejlesztő csoportokban.Kövess be, vagy lépj kapcsolatba velem a ",
+  "about_text_after_linkedin": "profilomon, ahol hasznos tartalmakat osztok meg a Web fejlesztésröl és Programozásról",
+
+  "about_text_start_3": "Én nyitott vagyok a ",
+  "about_job": "Munka",
+  "about_after_job": "lehetőségekre ahol tanulhatok és fejlödhetek.Ha van egy lehetőséged ami illeszkedik a készségeim szintjéhez, akkor ne habozz, lépj velem",
+  "about_text_contact_me": "kapcsolatba.",
+
+  "about_btn": "Kapcsolat",
+
   "skills_title": "Készségek",
   "skills_text_1": "A webfejlesztés nekem szenvedély.Szeretek létrehozni oldalakat, felhasználói környezetett, és összeségében megkreálni a kinézetett, már ha nem vagyok webdesigner.",
   "skills_text_2": "A jövőben szeretném megtanulni a ",
   "skills_text_3": " , és jelentkezni valahova , hogy ",
-  "skills_text_4": "legyek.",
+  "skills_text_4": " is legyek.",
   "skills_python": "Pythont",
-  "skills_webdesigner": "Webdesigner is ",
+  "skills_webdesigner": "Webdesigner",
   "skills_little": "Kis ",
   "skills_photoshop": "Photoshop",
   "skills_msoffice": "és MS Office",
   "skills_text_5": " tudásom van, és gyorsan gépelek.Fejlesztem magam és csinálom a projekteket minden nap!",
+  "skills_lang_title": "Nyelvtudás",
+  "skills_lang": "Angol",
+  "skills_lang_writing": "Irás",
+  "skills_lang_understand": "Megértés",
+  "skills_lang_speak": "Beszéd",
 
   "projects_title": "Projektek",
-  "projects_more_btn": "Több projekt itt",
 
   "contact_title": "Kapcsolat",
-  "contact_intro_text": "Vedd fel a kapcsolatott",
-  "contact_text_1": ", szóval ha felkeltettem az érdeklődésed, és szeretnéd ha ",
-  "contact_text_2": ", akkor kérlek küldj nekem egy emailt !",
-  "contact_highlighted_text_1": "Én Frontend állást keresek ",
-  "contact_highlighted_text_2": "csatlakoznék a csapatodba ",
-  "contact_email_btn": "Küldj Emailt",
-  "contact_footer_text": "Megtervezve és leprogramozva, ",
-  "contact_sign": "Kovács Norbert",
+  "contact_info": "Vegye velem fel a kapcsolatott az Űrlap kitöltésével, és amint lehet visszajelzek önnek",
+  "contact_submit": "Küldés",
+  "contact_input_name": "Név",
+  "contact_input_email": "Email cim",
+  "contact_input_textarea": "Üzenet",
+  "contact_input_name_placeholder": "Irja be a nevét",
+  "contact_input_email_placeholder": "irja be az email cimét",
+  "contact_input_textarea_placeholder": "Irja be az üzenetét",
+  "contact_input_name_after": "Kérem irjon egy érvényes nevet",
+  "contact_input_email_after": "Kérem irjon egy érvényes email cimet",
+  "contact_input_textarea_after": "Kérem irjon egy üzenetett",
+
+  "footer_title": "Média",
+  "footer_info": "Ha a kódom felkeltette az érdeklődésed, vedd fel velem a kapcsolatott a közöségi platformokon vagy emailben",
+  "footer_copyright": "Jogvédett 2023.Készitette",
+  "footer_name": "Kovács Norbert",
 
   "projects": [
     {
@@ -45,11 +78,11 @@
       "title": "Insure Landing Page",
       "description": "Ez a project egy Frontend mentor design.Ez volt az első projektem ahol ReactJs-t és Sass preproceszort használtam.Nagy kihivás volt, és sokat tanultam belöle.",
       "note": "Ezt a projektet 375px és 1440px felbontásra irtam meg.",
-      "tech": "HTML, CSS, SCSS, ReactJs, React Router, Hash Link, Boxicon Icons",
+      "tech": ["HTML", "CSS", "SCSS", "ReactJs", "React Router", " Hash Link", "Boxicon Icons"],
       "projectlink": "https://github.com/MrBeard89/insure-landing-page-react",
       "livelink": "https://mrbeard89.github.io/insure-landing-page-react/",
-      "imglinkmobile": "insure-mobile.png",
-      "imglinkdesktop": "insure-desktop.png"
+      "imglinkvector": "laptopvector.png",
+      "imglink": "insure-desktop.png"
     },
 
     {
@@ -57,11 +90,11 @@
       "title": "Dragon Ball Fan oldal",
       "description": "Ez a project volt a modulzáróm Scssből.A szabályok egyszerűek voltak, irj egy SPA-t a kedvenc márkáddal, igy hát mivel nagyon szerettem a dragonball-t, ezért ezt választottam.",
       "note": "Ez a projekt minden felbontáson reszponziv",
-      "tech": "HTML, CSS, SCSS, ReactJs, React Router,Link, ",
+      "tech": ["HTML", "CSS", "SCSS", "ReactJs", "React Router", "Link"],
       "projectlink": "https://github.com/MrBeard89/dragonball-fanpage",
       "livelink": "https://mrbeard89.github.io/dragonball-fanpage/",
-      "imglinkmobile": "dragonball-mobile.png",
-      "imglinkdesktop": "dragonball-desktop.png"
+      "imglinkvector": "laptopvector.png",
+      "imglink": "dragonball-desktop.png"
     },
 
     {
@@ -69,11 +102,11 @@
       "title": "Todo App Reactal",
       "description": "Ez egy 'TodoApp' Reactal.Létretudsz hozni egy teendőt, kitudod választani, és törölni.",
       "note": "Ez a projekt minden felbontáson reszponziv",
-      "tech": "HTML5, CSS3, Bootstrap5, React",
+      "tech": ["HTML5", "CSS3", "Bootstrap5", "React"],
       "projectlink": "https://github.com/MrBeard89/todoapp-react",
       "livelink": "https://mrbeard89.github.io/todoapp-react/",
-      "imglinkmobile": "react-todo-mobile.png",
-      "imglinkdesktop": "todoapp-desktop.png"
+      "imglinkvector": "laptopvector.png",
+      "imglink": "todoapp-desktop.png"
     },
 
     {
@@ -81,11 +114,11 @@
       "title": "Url Rövidítő Api Reactal",
       "description": "Ez a projekt egy Api-t használ, ami lerövidit minden linket amit bemásolunk, és megjeleniti az eredetit és a röviditett linket.Kitudod másolni a vágólapra egy gombnyomással!",
       "note": "Ezt a projektet 375px és 1440px felbontásra irtam meg",
-      "tech": "React, React Router, Scss, CopytoClipboard library, Axios to API call",
+      "tech": ["React", "React Router", "Scss", "CopytoClipboard library", "Axios to API call"],
       "projectlink": "https://github.com/MrBeard89/url-shortening-api-react",
       "livelink": "https://mrbeard89.github.io/url-shortening-api-react/",
-      "imglinkmobile": "url-shortening-mobile.png",
-      "imglinkdesktop": "url-shortening-desktop.png"
+      "imglinkvector": "laptopvector.png",
+      "imglink": "url-shortening-desktop.png"
     },
 
     {
@@ -93,11 +126,11 @@
       "title": "Sufni Gsm Context Apival",
       "description": "Ebben a projektben Api hivással kapjuk meg a valuta értékeket, majd kiválasztva a telefont, a Kalkulációs oldalra tudunk menni, ahol kitudjuk számolni a használt telefon értékét.Erre a Context Apit használom.",
       "note": "Reszponziv, de a mobil felbontás optimalizáció jelenleg még tart",
-      "tech": "React, React Router, Css, React - Context API, Axios to API call",
+      "tech": ["React", "React Router", " Css", "React - Context API", "Axios to API call"],
       "projectlink": "https://github.com/MrBeard89/sufni_gsm",
       "livelink": "https://mrbeard89.github.io/sufni_gsm/",
-      "imglinkmobile": "sufnigsm.png",
-      "imglinkdesktop": "sufnigsm-desktop.png"
+      "imglinkvector": "laptopvector.png",
+      "imglink": "sufnigsm-desktop.png"
     }
   ]
 }

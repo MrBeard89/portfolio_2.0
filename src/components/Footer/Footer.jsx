@@ -1,5 +1,6 @@
 import '../../styles/Footer/Footer.scss'
-
+import { useContext } from 'react'
+import { LanguageContext } from '../../context/LanguageContext'
 //Social icons
 
 import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
@@ -9,7 +10,12 @@ import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
 import { HashLink } from 'react-router-hash-link'
 import { Link } from 'react-router-dom'
 
+//Import Language Library
+const i18n = require('../../utils/i18n')
+
 export const Footer = () => {
+  const { language } = useContext(LanguageContext)
+
   return (
     <div className='footer-wrapper'>
       {/* Main conatiner  */}
@@ -20,7 +26,7 @@ export const Footer = () => {
         <div className='social'>
           {/* Title */}
 
-          <h2 className='social-title'>Social</h2>
+          <h2 className='social-title'>{i18n.text(language, i18n.MAP.footer_title)}</h2>
 
           {/* Social icons container */}
 
@@ -47,20 +53,17 @@ export const Footer = () => {
         {/* Outro text container */}
         <div className='footer-outro'>
           {/* text */}
-          <p className='footer-outro-text'>
-            If my code catched your interest, feel free to contact me on social platforms or via
-            email
-          </p>
+          <p className='footer-outro-text'>{i18n.text(language, i18n.MAP.footer_info)}</p>
         </div>
 
         {/* Copyright container */}
         <div className='copyright-container'>
           {/* Text */}
           <p className='copy'>
-            &copy; Copyright 2023.Made by{' '}
+            &copy; {i18n.text(language, i18n.MAP.footer_copyright)}{' '}
             <span className='footer-copy-link'>
               <HashLink smooth to='#hero'>
-                Norbert Kovacs
+                {i18n.text(language, i18n.MAP.footer_name)}
               </HashLink>
             </span>
           </p>
