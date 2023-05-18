@@ -7,6 +7,7 @@ import '../../styles/Navbar/Navbar.scss'
 import Logo from '../../assets/logo/beard.png'
 //Imported Hashlink
 import { HashLink } from 'react-router-hash-link'
+import { Link } from 'react-router-dom'
 
 //React icons imports
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -122,6 +123,17 @@ export const Navbar = () => {
                 </li>
               </span>
             </HashLink>
+
+            {/* Contact link */}
+
+            <Link to='https://github.com/MrBeard89/portfolio_2.0' target='_blank'>
+              <span className='link-container'>
+                <li className='navlink'>
+                  <h3>{i18n.text(language, i18n.MAP.navbar_code)}</h3>
+                  <IoMdArrowDropright className='hover-arrow' />
+                </li>
+              </span>
+            </Link>
 
             <div className='toggle-container'>
               <button
