@@ -270,6 +270,15 @@
     transition: 1s ease-in-out;
     width: 540px;
     transition: 1s ease-in-out;
+    background-color: #464646 !important;
+  }
+  .projects-container .project .project-info-wrapper .btn-container button {
+    color: rgba(24, 24, 24, 0.8);
+    background-color: #55bcc9 !important;
+  }
+  .projects-container .project .project-info-wrapper .info-text,
+  .projects-container .project .project-info-wrapper .info-note {
+    color: #ffffff;
   }
   .projects-container .project .project-info-wrapper .links-container {
     display: flex;

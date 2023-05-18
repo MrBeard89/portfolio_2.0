@@ -331,6 +331,19 @@
         transition: 1s ease-in-out;
         width: v.$mobile-m-width;
         transition: 1s ease-in-out;
+        background-color: v.$color-filled-gray !important;
+
+        .btn-container {
+          button {
+            color: v.$color-soft-black;
+            background-color: v.$color-moderate-cyan !important;
+          }
+        }
+
+        .info-text,
+        .info-note {
+          color: v.$color-white-cyan;
+        }
 
         //Button links - Code and Live
 
