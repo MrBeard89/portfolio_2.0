@@ -82,6 +82,9 @@
   flex-direction: column;
   align-items: center;
 }
+.about-wrapper .about-container .introduction-container .about-title {
+  width: 156px;
+}
 .about-wrapper .about-container .introduction-container .about-info {
   text-align: center;
   font-size: 16px;
