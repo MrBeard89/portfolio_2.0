@@ -41,7 +41,7 @@ export const Contact = () => {
                 type='text'
                 name='name'
                 placeholder={i18n.text(language, i18n.MAP.contact_input_name_placeholder)}
-                pattern='[a-zA-Z]+'
+                pattern='^[a-zA-ZÀ-ÖØ-öø-ÿ ]+$'
                 required
               />
               {language === 'hu' ? <span className='hu'></span> : <span className='en'></span>}
